@@ -1,34 +1,45 @@
 {
-  "name": "ui-library",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
-  },
-  "devDependencies": {
-    "@chromatic-com/storybook": "^4.0.0",
-    "@storybook/addon-a11y": "^9.0.6",
-    "@storybook/addon-docs": "^9.0.6",
-    "@storybook/addon-onboarding": "^9.0.6",
-    "@storybook/addon-vitest": "^9.0.6",
-    "@storybook/react-vite": "^9.0.6",
-    "@vitejs/plugin-react": "^4.5.1",
-    "@vitest/browser": "^3.2.3",
-    "@vitest/coverage-v8": "^3.2.3",
-    "playwright": "^1.52.0",
-    "storybook": "^9.0.6",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.5",
-    "vitest": "^3.2.3"
-  }
+	"name": "@maj0codes/ui-library",
+	"version": "1.0.2",
+	"description": "",
+	"main": "dist/ui-library.cjs.js",
+	"module": "dist/ui-library.es.js",
+	"types": "dist/types/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/ui-library.es.js",
+			"require": "./dist/ui-library.cjs.js",
+			"types": "./dist/types/index.d.ts"
+		}
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build",
+		"build": "vite build && tsc --emitDeclarationOnly"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0"
+	},
+	"devDependencies": {
+		"@chromatic-com/storybook": "^4.0.0",
+		"@storybook/addon-a11y": "^9.0.6",
+		"@storybook/addon-docs": "^9.0.6",
+		"@storybook/addon-onboarding": "^9.0.6",
+		"@storybook/addon-vitest": "^9.0.6",
+		"@storybook/react-vite": "^9.0.6",
+		"@types/node": "^22.15.30",
+		"@vitejs/plugin-react": "^4.5.1",
+		"@vitest/browser": "^3.2.3",
+		"@vitest/coverage-v8": "^3.2.3",
+		"playwright": "^1.52.0",
+		"storybook": "^9.0.6",
+		"typescript": "^5.8.3",
+		"vite": "^6.3.5",
+		"vitest": "^3.2.3"
+	}
 }

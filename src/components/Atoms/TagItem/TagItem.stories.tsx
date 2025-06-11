@@ -1,15 +1,24 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Button from "./index";
+import TagItem from "./index";
 
-const meta: Meta<typeof Button> = {
-	component: Button,
-	title: "Button/primaryButton",
+const meta: Meta<typeof TagItem> = {
+	component: TagItem,
+	title: "Atoms/TagItem",
+	argTypes: {
+		color: {
+			control: {
+				type: "select",
+				options: ["#F36F45", "#8769FF", "#61D1EA"],
+			},
+		},
+	},
 };
 
 export default meta;
 
-export const Default: StoryObj<typeof Button> = {
+export const Default: StoryObj<typeof TagItem> = {
 	args: {
-		label: "Click me",
+		label: "Category",
+		color: "#F36F45",
 	},
 };

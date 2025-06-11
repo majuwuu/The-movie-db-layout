@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Button from "./index";
+import Caret from "./index";
 
-const meta: Meta<typeof Button> = {
-	component: Button,
-	title: "Button/primaryButton",
+const meta: Meta<typeof Caret> = {
+	component: Caret,
+	title: "Atoms/caret",
 };
 
 export default meta;
 
-export const Default: StoryObj<typeof Button> = {
+export const Default: StoryObj<typeof Caret> = {
 	args: {
-		label: "Click me",
+		src: "/static/CaretMenu.svg",
 	},
 };

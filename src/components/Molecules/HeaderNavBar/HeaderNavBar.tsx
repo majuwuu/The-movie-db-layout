@@ -1,0 +1,45 @@
+import React, { useState } from "react";
+import PrimaryText from "../../Atoms/PrimaryText";
+import Caret from "../../Atoms/Caret";
+import "../../../tailwind.css";
+
+export interface HeaderNavBarProps {
+	label: string;
+}
+
+const HeaderNavBar: React.FC<HeaderNavBarProps> = ({ label }) => {
+	const navItems = [
+		{ title: "Movies", link: "" },
+		{ title: "TV shows", link: "" },
+		{ title: "Animations", link: "" },
+		{ title: "Plans", link: "" },
+	];
+
+	const [activeItem, setActiveItem] = useState("Movies");
+
+	return (
+		<nav className="bg-[#17171B] w-min flex relative space-x-6 py-4 px-6 cursor-pointer">
+			{navItems.map((item) => (
+				<div
+					key={item.title}
+					className="relative bg-red flex flex-col items-center"
+					onClick={() => setActiveItem(item.title)}>
+					<a>
+						<PrimaryText
+							label={item.title}
+							size="12px"
+							weigth={item.title === activeItem ? "bold" : "normal"}
+						/>
+					</a>
+					{item.title === activeItem && (
+						<div className="absolute top-full mt-1 transition-all duration-100 ease-in-out">
+							<Caret />
+						</div>
+					)}
+				</div>
+			))}
+		</nav>
+	);
+};
+
+export default HeaderNavBar;

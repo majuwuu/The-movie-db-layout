@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Button from "./index";
+import SettingsItem from "./index";
 
-const meta: Meta<typeof Button> = {
-	component: Button,
-	title: "Button/primaryButton",
+const meta: Meta<typeof SettingsItem> = {
+	component: SettingsItem,
+	title: "Atoms/SettingsItem",
 };
 
 export default meta;
 
-export const Default: StoryObj<typeof Button> = {
+export const Default: StoryObj<typeof SettingsItem> = {
 	args: {
 		label: "Click me",
 	},

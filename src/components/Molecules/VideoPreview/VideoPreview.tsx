@@ -22,8 +22,8 @@ const VideoPreview: React.FC<CardDescriptionProps> = ({
 	imageSrc,
 }) => {
 	return (
-		<div className="w-full relative bg-black">
-			<div className="h-[150px] w-full bg-red-400">
+		<div className="w-full relative overflow-hidden ">
+			<div>
 				<PreviewCard imageSrc={imageSrc} />
 			</div>
 			<div className="absolute left-0 bottom-0 w-full">

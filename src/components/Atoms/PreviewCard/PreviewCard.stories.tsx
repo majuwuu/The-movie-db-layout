@@ -10,6 +10,6 @@ export default meta;
 
 export const Default: StoryObj<typeof PreviewCard> = {
 	args: {
-		src: "/static/image_placeholder.jpg",
+		imageSrc: "/static/image_placeholder.jpg",
 	},
 };

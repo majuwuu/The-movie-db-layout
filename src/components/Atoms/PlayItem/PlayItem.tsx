@@ -1,11 +1,7 @@
 import React from "react";
 import "../../../tailwind.css";
 
-export interface PlayItem {
-	label: string;
-}
-
-const PlayItem: React.FC<PlayItem> = ({ label }) => {
+const PlayItem: React.FC = () => {
 	return (
 		<div className="w-7 h-7 flex justify-center items-center rounded-full bg-[#C4C4C4]">
 			<svg

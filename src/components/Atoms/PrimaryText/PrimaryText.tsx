@@ -8,13 +8,13 @@ export interface PrimaryTextProps {
 
 const PrimaryText: React.FC<PrimaryTextProps> = ({ label, size, weigth }) => {
 	return (
-		<div>
+		<div className="m-0 p-0">
 			<span
 				style={{
 					fontSize: size,
 					fontFamily: "quicksand, sans-serif",
 				}}
-				className={` text-white whitespace-nowrap font-${weigth}`}>
+				className={`m-0 p-0 text-white whitespace-nowrap font-${weigth}`}>
 				{label}
 			</span>
 		</div>

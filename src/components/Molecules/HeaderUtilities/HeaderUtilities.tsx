@@ -6,16 +6,19 @@ import SettingsItem from "../../Atoms/SettingsItem";
 import ProfileComponent from "../ProfileComponent";
 
 export interface HeaderUtilities {
-	src: string;
+	userData: {
+		name: string;
+		imageSrc: string;
+	}[];
 }
 
-const HeaderUtilities: React.FC<HeaderUtilities> = ({ src = "/" }) => {
+const HeaderUtilities: React.FC<HeaderUtilities> = ({ userData }) => {
 	return (
 		<nav className="bg-[#17171B] w-min flex relative space-x-6 py-4 px-6 cursor-pointer">
 			<SearchItem />
 			<NotificationItem />
 			<SettingsItem />
-			<ProfileComponent src={src} />
+			<ProfileComponent imageSrc={userData[0].imageSrc} />
 		</nav>
 	);
 };

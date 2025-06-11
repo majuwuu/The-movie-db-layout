@@ -3,7 +3,7 @@ import HeaderNavBar from "./index";
 
 const meta: Meta<typeof HeaderNavBar> = {
 	component: HeaderNavBar,
-	title: "Molecules/HeaderNavBar",
+	title: "Organism/Header",
 };
 
 export default meta;
@@ -15,6 +15,12 @@ export const Default: StoryObj<typeof HeaderNavBar> = {
 			{ title: "TV shows", link: "" },
 			{ title: "Animations", link: "" },
 			{ title: "Plans", link: "" },
+		],
+		userData: [
+			{
+				name: "Joe",
+				imageSrc: "/static/Profile.png",
+			},
 		],
 	},
 };

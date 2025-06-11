@@ -2,13 +2,13 @@ import React from "react";
 import "../../../tailwind.css";
 
 export interface PreviewCard {
-	src: string;
+	imageSrc: string;
 }
 
-const PreviewCard: React.FC<PreviewCard> = ({ src }) => {
+const PreviewCard: React.FC<PreviewCard> = ({ imageSrc }) => {
 	return (
-		<div className="xl:max-w-[294px] sm:max-w-full h-full rounded-[20px] overflow-hidden shadow-lg">
-			<img src={src}></img>
+		<div className="w-full h-full overflow-hidden shadow-lg">
+			<img className="w-full" src={imageSrc}></img>
 		</div>
 	);
 };

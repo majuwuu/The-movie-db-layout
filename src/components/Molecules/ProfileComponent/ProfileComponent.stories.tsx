@@ -10,6 +10,6 @@ export default meta;
 
 export const Default: StoryObj<typeof ProfileComponent> = {
 	args: {
-		src: "/static/Profile.png",
+		imageSrc: "/static/Profile.png",
 	},
 };

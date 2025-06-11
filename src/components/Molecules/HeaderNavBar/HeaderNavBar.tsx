@@ -4,17 +4,13 @@ import Caret from "../../Atoms/Caret";
 import "../../../tailwind.css";
 
 export interface HeaderNavBarProps {
-	label: string;
+	navItems: {
+		title: string;
+		link: string;
+	}[];
 }
 
-const HeaderNavBar: React.FC<HeaderNavBarProps> = ({ label }) => {
-	const navItems = [
-		{ title: "Movies", link: "" },
-		{ title: "TV shows", link: "" },
-		{ title: "Animations", link: "" },
-		{ title: "Plans", link: "" },
-	];
-
+const HeaderNavBar: React.FC<HeaderNavBarProps> = ({ navItems }) => {
 	const [activeItem, setActiveItem] = useState("Movies");
 
 	return (
@@ -32,7 +28,7 @@ const HeaderNavBar: React.FC<HeaderNavBarProps> = ({ label }) => {
 						/>
 					</a>
 					{item.title === activeItem && (
-						<div className="absolute top-full mt-1 transition-all duration-100 ease-in-out">
+						<div className="absolute -bottom-9 mt-1 transition-all duration-100 ease-in-out">
 							<Caret />
 						</div>
 					)}

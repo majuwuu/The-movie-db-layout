@@ -10,6 +10,11 @@ export default meta;
 
 export const Default: StoryObj<typeof HeaderUtilities> = {
 	args: {
-		src: "/static/Profile.png",
+		userData: [
+			{
+				name: "Joe",
+				imageSrc: "/static/Profile.png",
+			},
+		],
 	},
 };

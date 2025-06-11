@@ -3,7 +3,7 @@ import "../../../tailwind.css";
 
 export interface TagItem {
 	label: string;
-	color: "#F36F45" | "#8769FF" | "#61D1EA";
+	color: "#F36F45" | "#8769FF" | "#61D1EA" | "#FFFFFF";
 }
 
 const TagItem: React.FC<TagItem> = ({ label, color }) => {
@@ -11,7 +11,7 @@ const TagItem: React.FC<TagItem> = ({ label, color }) => {
 		<div className="rounded-sm">
 			<p
 				style={{ backgroundColor: color }}
-				className={` text-[10px] py-1 p-2 rounded-[20px] text-white w-min whitespace-nowrap `}>
+				className={` text-[10px] py-1 p-2 rounded-[20px] text-[#2C383B] w-min whitespace-nowrap `}>
 				{label}
 			</p>
 		</div>

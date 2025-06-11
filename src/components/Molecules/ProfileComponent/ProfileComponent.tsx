@@ -4,16 +4,16 @@ import CaretDown from "../../Atoms/CaretDown/CaretDown";
 import ImageBubble from "../../Atoms/ImageBubble";
 
 interface ProfileComponentProps {
-	src: string;
+	imageSrc: string;
 }
 
-const ProfileComponent: React.FC<ProfileComponentProps> = ({ src = "/" }) => {
+const ProfileComponent: React.FC<ProfileComponentProps> = ({ imageSrc }) => {
 	return (
 		<div
 			className="bg-[#17171B] w-9 h-5 flex cursor-pointer justify-between
 		 items-center">
 			<ImageBubble>
-				<img src={src} alt="Profile Picture" />
+				<img src={imageSrc} alt="Profile Picture" />
 			</ImageBubble>
 			<div className="">
 				<CaretDown />

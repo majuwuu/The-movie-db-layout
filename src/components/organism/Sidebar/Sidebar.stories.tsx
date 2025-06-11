@@ -30,5 +30,10 @@ export const Default: StoryObj<typeof Sidebar> = {
 				imageSrc: "/static/image_placeholder.jpg",
 			},
 		],
+
+		category: {
+			allCategories: ["Action", "Western", "Adventures", "Drama", "Sci-Fi"],
+			favouriteCategorie: ["Crime", "Comedy", "Thriller"],
+		},
 	},
 };

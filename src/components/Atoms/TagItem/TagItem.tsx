@@ -11,7 +11,7 @@ const TagItem: React.FC<TagItem> = ({ label, color }) => {
 		<div className="rounded-sm">
 			<p
 				style={{ backgroundColor: color }}
-				className={` text-[10px] py-1 p-2 rounded-[20px] text-[#2C383B] w-min whitespace-nowrap `}>
+				className={` text-[10px] py-1  px-3 rounded-[20px] text-[#2C383B] w-min whitespace-nowrap `}>
 				{label}
 			</p>
 		</div>

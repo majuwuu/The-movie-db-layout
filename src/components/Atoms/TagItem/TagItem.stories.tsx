@@ -8,7 +8,7 @@ const meta: Meta<typeof TagItem> = {
 		color: {
 			control: {
 				type: "select",
-				options: ["#F36F45", "#8769FF", "#61D1EA"],
+				options: ["#F36F45", "#8769FF", "#61D1EA", "#262629"],
 			},
 		},
 	},
@@ -19,6 +19,6 @@ export default meta;
 export const Default: StoryObj<typeof TagItem> = {
 	args: {
 		label: "Category",
-		color: "#F36F45",
+		color: "#FFFFFF",
 	},
 };

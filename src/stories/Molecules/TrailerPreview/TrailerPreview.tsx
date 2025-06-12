@@ -38,7 +38,7 @@ const TrailerPreview: React.FC<VideoCardDescriptionProps> = ({
 					</div>
 				)}
 				{trend && (
-					<div className="absolute cursor-pointer top-2 lg:-bottom-24  w-full h-full left-0 ml-2">
+					<div className="absolute top-2 lg:-bottom-24  left-0 ml-2">
 						<TrendingTag />
 					</div>
 				)}
@@ -64,16 +64,7 @@ const TrailerPreview: React.FC<VideoCardDescriptionProps> = ({
 					<div
 						className={`absolute left-0 bottom-0 w-full transition-opacity duration-300 ${
 							isHovering ? "opacity-0 pointer-events-none" : "opacity-100"
-						}`}>
-						<CardDescription
-							title={title}
-							secondaryTitle={secondaryTitle}
-							link={link}
-							thirdTitle={thirdTitle}
-							duration={duration}
-							stars={stars}
-						/>
-					</div>
+						}`}></div>
 				)}
 			</div>
 		</div>

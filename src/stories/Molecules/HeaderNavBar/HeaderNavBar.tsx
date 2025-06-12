@@ -14,7 +14,9 @@ const HeaderNavBar: React.FC<HeaderNavBarProps> = ({ navItems }) => {
 	const [activeItem, setActiveItem] = useState("Movies");
 
 	return (
-		<nav className="bg-[#17171B] w-min flex relative sm:gap-2 lg:gap-13 py-4 px-6 cursor-pointer">
+		<nav
+			className="bg-[#17171B] w-min flex relative gap-2
+		 lg:gap-13 py-4 px-6 cursor-pointer">
 			{navItems.map((item) => (
 				<div
 					key={item.title}

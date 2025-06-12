@@ -64,7 +64,16 @@ const TrailerPreview: React.FC<VideoCardDescriptionProps> = ({
 					<div
 						className={`absolute left-0 bottom-0 w-full transition-opacity duration-300 ${
 							isHovering ? "opacity-0 pointer-events-none" : "opacity-100"
-						}`}></div>
+						}`}>
+						<CardDescription
+							title={title}
+							secondaryTitle={secondaryTitle}
+							link={link}
+							thirdTitle={thirdTitle}
+							duration={duration}
+							stars={stars}
+						/>
+					</div>
 				)}
 			</div>
 		</div>

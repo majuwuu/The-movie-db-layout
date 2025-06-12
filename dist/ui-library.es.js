@@ -389,7 +389,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
     "nav",
     {
       className: `bg-[#17171B] w-min flex relative gap-2\r
-		 lg:gap-13 py-4 px-6 cursor-pointer lg:ml-[50px]`,
+		 lg:gap-13 py-4 px-6 cursor-pointer lg:ml-[260px]`,
       children: l.map((s) => /* @__PURE__ */ e.jsxs(
         "div",
         {
@@ -640,7 +640,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
   bannerPromo: l,
   continueWatching: i,
   popular: a
-}) => /* @__PURE__ */ e.jsxs("main", { className: "bg-[#17171B] lg:max-w-min p-2 sm:p-10 lg:pt-10 2xl:pl-24 max-w-full", children: [
+}) => /* @__PURE__ */ e.jsxs("main", { className: "bg-[#17171B] lg:max-w-min p-2 xs:p-10 lg:pt-10 2xl:pl-24 max-w-full", children: [
   /* @__PURE__ */ e.jsx("section", { className: "lg:block lg:h-[134px] lg:w-[834px] relative", children: /* @__PURE__ */ e.jsx(
     R,
     {
@@ -827,7 +827,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
   return /* @__PURE__ */ e.jsxs(
     "div",
     {
-      className: "flex w-full h-full items-center px-12 relative cursor-pointer",
+      className: "flex w-full h-full items-center relative cursor-pointer",
       onClick: () => a((x) => !x),
       children: [
         /* @__PURE__ */ e.jsx(c, { label: "Sort by/", weigth: "normal", size: "12px" }),

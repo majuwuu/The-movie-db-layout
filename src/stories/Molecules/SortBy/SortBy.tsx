@@ -15,7 +15,7 @@ const SortBy: React.FC<SortByProps> = ({ category }) => {
 
 	return (
 		<div
-			className="flex w-full h-full items-center px-12 relative cursor-pointer"
+			className="flex w-full h-full items-center relative cursor-pointer"
 			onClick={() => setOpen((prev) => !prev)}>
 			<PrimaryText label={"Sort by/"} weigth={"normal"} size={"12px"} />
 			<div className="ml-2 mr-1  relative">

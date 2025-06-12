@@ -1,14 +1,11 @@
 {
 	"name": "@maj0codes/ui-library",
-	"version": "1.1.17",
+	"version": "1.1.18",
 	"type": "module",
 	"description": "",
 	"main": "dist/ui-library.cjs.js",
 	"module": "dist/ui-library.es.js",
 	"types": "dist/types/index.d.ts",
-	"files": [
-		"src/"
-	],
 	"exports": {
 		".": {
 			"import": "./dist/ui-library.es.js",

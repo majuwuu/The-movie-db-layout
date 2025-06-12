@@ -389,7 +389,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
     "nav",
     {
       className: `bg-[#17171B] w-min flex relative gap-2\r
-		 lg:gap-13 py-4 px-6 cursor-pointer`,
+		 lg:gap-13 py-4 px-6 cursor-pointer lg:ml-[50px]`,
       children: l.map((s) => /* @__PURE__ */ e.jsxs(
         "div",
         {
@@ -640,7 +640,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
   bannerPromo: l,
   continueWatching: i,
   popular: a
-}) => /* @__PURE__ */ e.jsxs("main", { className: "bg-[#17171B] lg:max-w-min p-6 sm:p-10 lg:pt-10 2xl:pl-24 max-w-full", children: [
+}) => /* @__PURE__ */ e.jsxs("main", { className: "bg-[#17171B] lg:max-w-min p-2 sm:p-10 lg:pt-10 2xl:pl-24 max-w-full", children: [
   /* @__PURE__ */ e.jsx("section", { className: "lg:block lg:h-[134px] lg:w-[834px] relative", children: /* @__PURE__ */ e.jsx(
     R,
     {
@@ -782,7 +782,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
       /* @__PURE__ */ e.jsx("path", { d: "M6 3V6M6 9V6M6 6H3H9", stroke: "black" })
     ]
   }
-) }), Ae = ({ category: l }) => /* @__PURE__ */ e.jsxs("div", { className: "bg-[#1E1E21] w-full h-full px-6 lg:px-12  ", children: [
+) }), Ae = ({ category: l }) => /* @__PURE__ */ e.jsxs("div", { className: "bg-[#1E1E21] w-full h-full px-6 lg:px-12 lg:pb-6  ", children: [
   /* @__PURE__ */ e.jsxs("div", { className: "pb-6 gap-1 flex items-center", children: [
     /* @__PURE__ */ e.jsx(_e, {}),
     /* @__PURE__ */ e.jsx(
@@ -859,7 +859,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
   videos: l,
   category: i,
   onCloseSideBar: a
-}) => /* @__PURE__ */ e.jsxs("aside", { className: "bg-[#17171B] relative w-full lg:w-[450px] pt-8 items-center min-h-screen flex flex-col m-0 p-0 border-r border-[#323232]", children: [
+}) => /* @__PURE__ */ e.jsxs("aside", { className: "bg-[#17171B] relative w-full lg:w-[450px] pt-8 items-center xs:min-h-screen flex flex-col m-0 p-0 border-r border-[#323232]", children: [
   /* @__PURE__ */ e.jsxs("div", { className: "flex w-full justify-between items-center px-6 sm:px-10 mb-4 whitespace-nowrap", children: [
     /* @__PURE__ */ e.jsx(c, { size: "18px", label: "New trailers", weigth: "bold" }),
     /* @__PURE__ */ e.jsx("div", { className: "flex justify-between items-center w-auto", children: /* @__PURE__ */ e.jsx(Fe, { category: i }) })
@@ -892,7 +892,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
   /* @__PURE__ */ e.jsx(
     "div",
     {
-      className: "absolute cursor-pointer right-0 top-0 lg:top-1/12  lg:-right-4.5 transform rotate-180 w-7 lg:block",
+      className: "absolute cursor-pointer right-0 xs:top-0 lg:top-1/12  lg:-right-4.5 transform rotate-180 w-7 lg:block",
       onClick: a,
       children: /* @__PURE__ */ e.jsx(I, {})
     }

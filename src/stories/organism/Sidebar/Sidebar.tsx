@@ -14,7 +14,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 	onCloseSideBar,
 }) => {
 	return (
-		<aside className="bg-[#17171B] relative w-full lg:w-[450px] pt-8 items-center min-h-screen flex flex-col m-0 p-0 border-r border-[#323232]">
+		<aside className="bg-[#17171B] relative w-full lg:w-[450px] pt-8 items-center xs:min-h-screen flex flex-col m-0 p-0 border-r border-[#323232]">
 			<div className="flex w-full justify-between items-center px-6 sm:px-10 mb-4 whitespace-nowrap">
 				<PrimaryText size={"18px"} label="New trailers" weigth="bold" />
 				<div className="flex justify-between items-center w-auto">
@@ -47,7 +47,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 				<AddGenres category={category} />
 			</div>
 			<div
-				className="absolute cursor-pointer right-0 top-0 lg:top-1/12  lg:-right-4.5 transform rotate-180 w-7 lg:block"
+				className="absolute cursor-pointer right-0 xs:top-0 lg:top-1/12  lg:-right-4.5 transform rotate-180 w-7 lg:block"
 				onClick={onCloseSideBar}>
 				<PlayItem />
 			</div>

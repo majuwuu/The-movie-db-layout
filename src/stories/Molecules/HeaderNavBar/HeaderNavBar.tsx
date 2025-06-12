@@ -16,7 +16,7 @@ const HeaderNavBar: React.FC<HeaderNavBarProps> = ({ navItems }) => {
 	return (
 		<nav
 			className="bg-[#17171B] w-min flex relative gap-2
-		 lg:gap-13 py-4 px-6 cursor-pointer">
+		 lg:gap-13 py-4 px-6 cursor-pointer lg:ml-[50px]">
 			{navItems.map((item) => (
 				<div
 					key={item.title}

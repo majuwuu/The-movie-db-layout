@@ -10,7 +10,7 @@ const Main: React.FC<MainContentProps> = ({
 	popular,
 }) => {
 	return (
-		<main className="bg-[#17171B] lg:max-w-min p-6 sm:p-10 lg:pt-10 2xl:pl-24 max-w-full">
+		<main className="bg-[#17171B] lg:max-w-min p-2 sm:p-10 lg:pt-10 2xl:pl-24 max-w-full">
 			<section className="lg:block lg:h-[134px] lg:w-[834px] relative">
 				<TrailerPreview
 					title=""

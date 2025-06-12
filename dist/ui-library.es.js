@@ -412,7 +412,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
       ))
     }
   );
-}, ze = ({ navItems: l, userData: i }) => /* @__PURE__ */ e.jsxs("header", { className: "bg-[#17171B] flex flex-col-reverse md:flex-row md items-center justify-between min-h-24 p-1 xl:p-4 border-b border-[#323232]", children: [
+}, ze = ({ navItems: l, userData: i }) => /* @__PURE__ */ e.jsxs("header", { className: "bg-[#17171B] lg:pl-[20%] flex flex-col-reverse md:flex-row md items-center justify-between min-h-24 p-1 xl:p-4 border-b border-[#323232]", children: [
   /* @__PURE__ */ e.jsx("div", { className: "w-full md:w-auto mb-4 md:mb-0 flex justify-center md:justify-start", children: /* @__PURE__ */ e.jsx(je, { navItems: l }) }),
   /* @__PURE__ */ e.jsx("div", { className: "w-full md:w-auto flex justify-center md:justify-end", children: /* @__PURE__ */ e.jsx(we, { userData: i }) })
 ] }), ge = ({

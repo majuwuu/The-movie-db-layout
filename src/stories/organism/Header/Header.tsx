@@ -6,7 +6,7 @@ import HeaderNavBar from "../../Molecules/HeaderNavBar";
 
 const Header: React.FC<HeaderProps> = ({ navItems, userData }) => {
 	return (
-		<header className="bg-[#17171B] flex flex-col-reverse md:flex-row md items-center justify-between min-h-24 p-1 xl:p-4 border-b border-[#323232]">
+		<header className="bg-[#17171B] lg:pl-[20%] flex flex-col-reverse md:flex-row md items-center justify-between min-h-24 p-1 xl:p-4 border-b border-[#323232]">
 			<div className="w-full md:w-auto mb-4 md:mb-0 flex justify-center md:justify-start">
 				<HeaderNavBar navItems={navItems} />
 			</div>

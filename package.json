@@ -1,6 +1,6 @@
 {
 	"name": "@maj0codes/ui-library",
-	"version": "1.1.18",
+	"version": "1.1.19",
 	"type": "module",
 	"description": "",
 	"main": "dist/ui-library.cjs.js",

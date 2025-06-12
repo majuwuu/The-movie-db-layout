@@ -19,6 +19,9 @@ export const Default: StoryObj<typeof Sidebar> = {
 				duration: "01:29",
 				views: "2.3m",
 				imageSrc: "/static/image_placeholder.jpg",
+				genre: "super heroes",
+				description:
+					"For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk...",
 			},
 			{
 				title: "Lorem ipsum",
@@ -28,6 +31,9 @@ export const Default: StoryObj<typeof Sidebar> = {
 				duration: "01:29",
 				views: "2.3m",
 				imageSrc: "/static/image_placeholder.jpg",
+				genre: "super heroes",
+				description:
+					"For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk...",
 			},
 		],
 

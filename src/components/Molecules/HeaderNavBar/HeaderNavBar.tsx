@@ -20,11 +20,12 @@ const HeaderNavBar: React.FC<HeaderNavBarProps> = ({ navItems }) => {
 					key={item.title}
 					className="relative bg-red flex flex-col items-center"
 					onClick={() => setActiveItem(item.title)}>
-					<a>
+					<a className=" whitespace-nowrap">
 						<PrimaryText
 							label={item.title}
 							size="12px"
 							weigth={item.title === activeItem ? "bold" : "normal"}
+							color={item.title !== activeItem ? "#606265" : undefined}
 						/>
 					</a>
 					{item.title === activeItem && (

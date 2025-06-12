@@ -27,7 +27,9 @@ const FavouriteGenres: React.FC<FavouriteGenres> = ({ category }) => {
 			</div>
 			<div className="flex flex-wrap gap-5 w-58 pb-4 ">
 				{category.allCategories.map((genre: string, idx: number) => (
-					<TagItem key={idx} color={getRandomColor()} label={genre} />
+					<div className="cursor-pointer">
+						<TagItem key={idx} color={getRandomColor()} label={genre} />
+					</div>
 				))}
 			</div>
 		</div>

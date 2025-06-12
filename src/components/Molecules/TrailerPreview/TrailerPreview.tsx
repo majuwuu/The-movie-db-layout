@@ -5,6 +5,7 @@ import Viewers from "../../Molecules/Viewers";
 import TrendingTag from "../TrendingTag";
 import CurrentViewers from "../CurrentViewers";
 import WatchNowButton from "../WatchNowButton";
+import { useState } from "react";
 
 export interface CardDescriptionProps {
 	title: string;
@@ -20,6 +21,8 @@ export interface CardDescriptionProps {
 	}[];
 	trend?: boolean;
 	imageSrc: string;
+	description?: string;
+	genre?: string;
 }
 
 const TrailerPreview: React.FC<CardDescriptionProps> = ({
@@ -33,9 +36,13 @@ const TrailerPreview: React.FC<CardDescriptionProps> = ({
 	stars,
 	currentViewers,
 	trend,
+	description,
+	genre,
 }) => {
+	const [isHovering, setIsHovering] = useState(false);
+
 	return (
-		<div className="w-full h-full relative rounded-[20px] overflow-hidden ">
+		<div className="w-full h-full relative rounded-[20px] overflow-hidden">
 			<div>
 				{title === "" && (
 					<div className="absolute cursor-pointer bottom-0 left-0 ml-6 mb-4">
@@ -43,12 +50,12 @@ const TrailerPreview: React.FC<CardDescriptionProps> = ({
 					</div>
 				)}
 				{currentViewers?.length && (
-					<div className="absolute  top-0 left-0 ml-6 mt-4">
+					<div className="absolute top-0 left-0 ml-6 mt-4">
 						<CurrentViewers currentViewers={currentViewers} />
 					</div>
 				)}
 				{trend && (
-					<div className="absolute  top-0 left-0 ml-6 mt-4">
+					<div className="absolute top-0 left-0 ml-6 mt-4">
 						<TrendingTag />
 					</div>
 				)}
@@ -57,18 +64,33 @@ const TrailerPreview: React.FC<CardDescriptionProps> = ({
 						<Viewers viewers={views} />
 					</div>
 				)}
-				<PreviewCard imageSrc={imageSrc} />
+				<PreviewCard
+					imageSrc={imageSrc}
+					title={title}
+					description={description}
+					genre={genre}
+					onHoverChange={(hovering) => {
+						if (description) {
+							setIsHovering(hovering);
+						}
+					}}
+				/>
 			</div>
 			<div className="absolute left-0 bottom-0 w-full">
-				{title && (
-					<CardDescription
-						title={title}
-						secondaryTitle={secondaryTitle}
-						link={link}
-						thirdTitle={thirdTitle}
-						duration={duration}
-						stars={stars}
-					/>
+				{title && !isHovering && (
+					<div
+						className={`absolute left-0 bottom-0 w-full transition-opacity duration-300 ${
+							isHovering ? "opacity-0 pointer-events-none" : "opacity-100"
+						}`}>
+						<CardDescription
+							title={title}
+							secondaryTitle={secondaryTitle}
+							link={link}
+							thirdTitle={thirdTitle}
+							duration={duration}
+							stars={stars}
+						/>
+					</div>
 				)}
 			</div>
 		</div>

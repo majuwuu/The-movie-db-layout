@@ -50,11 +50,13 @@ const CardDescription: React.FC<CardDescriptionProps> = ({
 				</div>
 				<div className="flex">
 					<div className="w-1 h-8 mr-4 bg-gradient-to-b from-white/10 backdrop-blur-xl via-white/80 to-white/10"></div>
-					{stars ? (
-						<Rated rate={stars} />
-					) : (
-						<TagItem label={duration} color="#FFFFFF" />
-					)}
+					<div className="mr-2">
+						{stars ? (
+							<Rated rate={stars} />
+						) : (
+							<TagItem label={duration} color="#FFFFFF" />
+						)}
+					</div>
 				</div>
 			</div>
 		</div>

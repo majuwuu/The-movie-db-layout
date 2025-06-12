@@ -17,6 +17,9 @@ export const WithStars: StoryObj<typeof TrailerPreview> = {
 		duration: "02:15",
 		imageSrc: "/static/image_placeholder.jpg",
 		stars: "4.5",
+		genre: "super heroes",
+		description:
+			"For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk...",
 	},
 };
 
@@ -39,6 +42,9 @@ export const WithCurrentViewers: StoryObj<typeof TrailerPreview> = {
 				imageSrc: "/static/viewer2.png",
 			},
 		],
+		genre: "super heroes",
+		description:
+			"For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk...",
 	},
 };
 

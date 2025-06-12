@@ -24,7 +24,9 @@ const AddGenres: React.FC<AddGenres> = ({ category }) => {
 			</div>
 			<div className="flex flex-wrap gap-5 w-58 pb-8 ">
 				{category.favouriteCategorie.map((genre: string, idx: number) => (
-					<TagItem key={idx} label={genre} color={"#F36F45"} />
+					<div className="cursor-pointer">
+						<TagItem key={idx} label={genre} color={"#FFFFFF"} />
+					</div>
 				))}
 			</div>
 		</div>

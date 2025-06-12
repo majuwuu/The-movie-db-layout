@@ -12,6 +12,9 @@ export default meta;
 export const Default: StoryObj<typeof Main> = {
 	args: {
 		bannerPromo: {
+			genre: "super heroes",
+			description:
+				"For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk...",
 			imageSrc: "/static/image_placeholder.jpg",
 			currentViewers: [
 				{
@@ -32,6 +35,9 @@ export const Default: StoryObj<typeof Main> = {
 				thirdTitle: "5h",
 				duration: "01:45",
 				imageSrc: "/static/image_placeholder.jpg",
+				genre: "super heroes",
+				description:
+					"For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk...",
 				trend: true,
 			},
 			{
@@ -42,6 +48,11 @@ export const Default: StoryObj<typeof Main> = {
 				duration: "00:59",
 				views: "540K",
 				imageSrc: "/static/image_placeholder.jpg",
+				genre: "super heroes",
+
+				description:
+					"For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk...",
+
 				currentViewers: [
 					{
 						id: "1",
@@ -62,6 +73,7 @@ export const Default: StoryObj<typeof Main> = {
 				duration: "02:15",
 				imageSrc: "/static/image_placeholder.jpg",
 				stars: "4.5",
+				genre: "super heroes",
 			},
 			{
 				title: "estrellas",
@@ -70,6 +82,7 @@ export const Default: StoryObj<typeof Main> = {
 				duration: "02:15",
 				imageSrc: "/static/image_placeholder.jpg",
 				stars: "4.5",
+				genre: "super heroes",
 			},
 			{
 				title: "estrellas",
@@ -78,6 +91,7 @@ export const Default: StoryObj<typeof Main> = {
 				duration: "02:15",
 				imageSrc: "/static/image_placeholder.jpg",
 				stars: "4.5",
+				genre: "super heroes",
 			},
 		],
 	},

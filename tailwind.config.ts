@@ -6,6 +6,9 @@ export default {
 			colors: {
 				primaryGray: "#C4C4C4",
 			},
+			fontFamily: {
+				quicksand: ["Quicksand", "sans-serif"],
+			},
 		},
 	},
 	plugins: [],

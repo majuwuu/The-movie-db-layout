@@ -14,7 +14,7 @@ export interface HeaderNavBarProps {
 }
 const Header: React.FC<HeaderNavBarProps> = ({ navItems, userData }) => {
 	return (
-		<header className="bg-[#17171B] min-h-24 flex m-0 p-0 items-center">
+		<header className="bg-[#17171B] min-h-24 flex m-0 p-0 items-center border-b border-[#323232]">
 			<div className="flex w-[60%] justify-center">
 				<HeaderNavBar navItems={navItems} />
 			</div>

@@ -11,9 +11,9 @@ export default meta;
 export const Default: StoryObj<typeof CardDescription> = {
 	args: {
 		title: "Lorem ipsum",
-		country: "Test",
+		secondaryTitle: "Test",
 		link: "/",
-		timeAgo: "3h ago",
+		thirdTitle: "3h ago",
 		duration: "01:29",
 	},
 };

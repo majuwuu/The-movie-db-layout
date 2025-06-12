@@ -13,18 +13,18 @@ export const Default: StoryObj<typeof Sidebar> = {
 		videos: [
 			{
 				title: "Lorem ipsum",
-				country: "Test",
+				secondaryTitle: "Test",
 				link: "/",
-				timeAgo: "3h ago",
+				thirdTitle: "3h ago",
 				duration: "01:29",
 				views: "2.3m",
 				imageSrc: "/static/image_placeholder.jpg",
 			},
 			{
 				title: "Lorem ipsum",
-				country: "Test",
+				secondaryTitle: "Test",
 				link: "/",
-				timeAgo: "3h ago",
+				thirdTitle: "3h ago",
 				duration: "01:29",
 				views: "2.3m",
 				imageSrc: "/static/image_placeholder.jpg",

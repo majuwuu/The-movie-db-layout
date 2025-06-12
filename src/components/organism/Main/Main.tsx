@@ -1,93 +1,107 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../../tailwind.css";
 import PrimaryText from "../../Atoms/PrimaryText";
 import TrailerPreview from "../../Molecules/TrailerPreview";
 
-export interface MainProps {
-	videos: {
-		title: string;
-		timeAgo: string;
-		country: "Test";
-		link: "/";
-		duration: "01:29";
-		views: "2.3m";
-		imageSrc: "/static/image_placeholder.jpg";
-	};
-}
-const Main: React.FC<MainProps> = ({ videos }) => {
+type Viewer = {
+	id: string;
+	imageSrc: string;
+};
+
+type BannerPromo = {
+	imageSrc: string;
+	currentViewers?: Viewer[];
+};
+
+type ContinueWatchingItem = {
+	title: string;
+	secondaryTitle: string;
+	link: string;
+	thirdTitle: string;
+	duration: string;
+	imageSrc: string;
+	trend?: boolean;
+	views?: string;
+	currentViewers?: Viewer[];
+};
+
+type PopularItem = {
+	title: string;
+	secondaryTitle: string;
+	link: string;
+	thirdTitle?: string;
+	duration: string;
+	imageSrc: string;
+	stars?: string;
+};
+
+type MainContent = {
+	bannerPromo: BannerPromo;
+	continueWatching: ContinueWatchingItem[];
+	popular: PopularItem[];
+};
+
+const Main: React.FC<MainContent> = ({
+	bannerPromo,
+	continueWatching,
+	popular,
+}) => {
 	return (
-		<div className="bg-[#17171B] p-5">
-			<div className=" pt-6 pb-8">
+		<main className="pl-24 bg-[#17171B] p-10">
+			<section className="h-[134px] w-[834px]">
 				<TrailerPreview
-					title={videos.title}
-					timeAgo={videos.timeAgo}
-					country={videos.country}
-					link={videos.link}
-					duration={videos.duration}
-					views={videos.views}
-					imageSrc={videos.imageSrc}
+					title=""
+					thirdTitle=""
+					secondaryTitle=""
+					link=""
+					duration=""
+					views=""
+					imageSrc={bannerPromo.imageSrc}
+					currentViewers={bannerPromo.currentViewers}
 				/>
-			</div>
-			<div className="flex flex-wrap ">
-				<div className="py-4">
+			</section>
+			<section className="flex flex-wrap">
+				<header className="py-4 w-full">
 					<PrimaryText label="Continue watching" size="18px" weigth="bold" />
+				</header>
+				<div className="flex flex-row gap-6 w-full">
+					{continueWatching.map((item, idx) => (
+						<article className="w-[402px] h-[170px]" key={idx}>
+							<TrailerPreview
+								title={item.title}
+								secondaryTitle={item.secondaryTitle}
+								link={item.link}
+								thirdTitle={item.thirdTitle}
+								duration={item.duration}
+								views={item.views}
+								imageSrc={item.imageSrc}
+								trend={item.trend}
+								currentViewers={item.currentViewers}
+							/>
+						</article>
+					))}
 				</div>
-				<div className="flex flex-row gap-6 ">
-					<TrailerPreview
-						title={videos.title}
-						country={videos.country}
-						link={videos.link}
-						timeAgo={videos.timeAgo}
-						duration={videos.duration}
-						views={videos.views}
-						imageSrc={videos.imageSrc}
-					/>
-					<TrailerPreview
-						title={videos.title}
-						country={videos.country}
-						link={videos.link}
-						timeAgo={videos.timeAgo}
-						duration={videos.duration}
-						views={videos.views}
-						imageSrc={videos.imageSrc}
-					/>
+			</section>
+			<section aria-labelledby="popular-heading" className="flex flex-wrap">
+				<header className="py-4 w-full">
+					<PrimaryText label="Popular" size="18px" weigth="bold" />
+				</header>
+				<div className="flex flex-row gap-6 py-4 w-full">
+					{popular.map((item, idx) => (
+						<article key={idx} className="w-[258px] h-[139px]">
+							<TrailerPreview
+								title={item.title}
+								secondaryTitle={item.secondaryTitle}
+								link={item.link}
+								duration={item.duration}
+								imageSrc={item.imageSrc}
+								stars={item.stars}
+							/>
+						</article>
+					))}
 				</div>
-			</div>
-			<div className="flex flex-wrap">
-				<div>
-					<PrimaryText label="Continue watching" size="18px" weigth="bold" />
-				</div>
-				<div className="flex flex-row gap-6 py-4 ">
-					<TrailerPreview
-						title={videos.title}
-						country={videos.country}
-						link={videos.link}
-						timeAgo={videos.timeAgo}
-						duration={videos.duration}
-						views={videos.views}
-						imageSrc={videos.imageSrc}
-					/>
-					<TrailerPreview
-						title={videos.title}
-						country={videos.country}
-						link={videos.link}
-						timeAgo={videos.timeAgo}
-						duration={videos.duration}
-						views={videos.views}
-						imageSrc={videos.imageSrc}
-					/>
-					<TrailerPreview
-						title={videos.title}
-						country={videos.country}
-						link={videos.link}
-						timeAgo={videos.timeAgo}
-						duration={videos.duration}
-						views={videos.views}
-						imageSrc={videos.imageSrc}
-					/>
-				</div>
-			</div>
-		</div>
+			</section>
+		</main>
 	);
 };
 

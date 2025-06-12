@@ -4,13 +4,7 @@ import "../../../tailwind.css";
 import Button from "../../Atoms/Button";
 import PlayItem from "../../Atoms/PlayItem";
 
-export interface WatchNowButton {
-	label: string;
-	size: string;
-	weight: string;
-}
-
-const WatchNowButton: React.FC<WatchNowButton> = () => {
+const WatchNowButton: React.FC = () => {
 	return (
 		<div className="flex flex-row items-center justify-center w-25 h-8 rounded-[5px] bg-[#F36F45] cursor-pointer">
 			<div className=" opacity-75 w-5 mx-2 -ml-2 ">

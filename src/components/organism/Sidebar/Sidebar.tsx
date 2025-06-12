@@ -8,9 +8,9 @@ import AddGenres from "../../Molecules/AddGenres";
 export interface SidebarProps {
 	videos: {
 		title: string;
-		country: string;
+		secondaryTitle: string;
 		link: string;
-		timeAgo: string;
+		thirdTitle: string;
 		duration: string;
 		views: string;
 		imageSrc: string;
@@ -33,9 +33,9 @@ const Sidebar: React.FC<SidebarProps> = ({ videos, category }) => {
 					<TrailerPreview
 						key={idx}
 						title={video.title}
-						country={video.country}
+						secondaryTitle={video.secondaryTitle}
 						link={video.link}
-						timeAgo={video.timeAgo}
+						thirdTitle={video.thirdTitle}
 						duration={video.duration}
 						views={video.views}
 						imageSrc={video.imageSrc}

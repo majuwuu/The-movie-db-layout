@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Main from "./index";
+import CurrentViewers from "../../Molecules/CurrentViewers";
 
 const meta: Meta<typeof Main> = {
 	component: Main,
@@ -10,14 +11,74 @@ export default meta;
 
 export const Default: StoryObj<typeof Main> = {
 	args: {
-		videos: {
-			title: "Lorem ipsum",
-			country: "Test",
-			link: "/",
-			timeAgo: "3h ago",
-			duration: "01:29",
-			views: "2.3m",
+		bannerPromo: {
 			imageSrc: "/static/image_placeholder.jpg",
+			currentViewers: [
+				{
+					id: "1",
+					imageSrc: "/static/viewer1.png",
+				},
+				{
+					id: "2",
+					imageSrc: "/static/viewer2.png",
+				},
+			],
 		},
+		continueWatching: [
+			{
+				title: "Trending",
+				secondaryTitle: "Chile",
+				link: "/",
+				thirdTitle: "5h",
+				duration: "01:45",
+				imageSrc: "/static/image_placeholder.jpg",
+				trend: true,
+			},
+			{
+				title: "Título con viewers",
+				secondaryTitle: "México",
+				link: "/",
+				thirdTitle: "1h",
+				duration: "00:59",
+				views: "540K",
+				imageSrc: "/static/image_placeholder.jpg",
+				currentViewers: [
+					{
+						id: "1",
+						imageSrc: "/static/viewer1.png",
+					},
+					{
+						id: "2",
+						imageSrc: "/static/viewer2.png",
+					},
+				],
+			},
+		],
+		popular: [
+			{
+				title: "estrellas",
+				secondaryTitle: "Drama / Western",
+				link: "/",
+				duration: "02:15",
+				imageSrc: "/static/image_placeholder.jpg",
+				stars: "4.5",
+			},
+			{
+				title: "estrellas",
+				secondaryTitle: "Sci-fi / Space Opera",
+				link: "/",
+				duration: "02:15",
+				imageSrc: "/static/image_placeholder.jpg",
+				stars: "4.5",
+			},
+			{
+				title: "estrellas",
+				secondaryTitle: "Action / Adventure",
+				link: "/",
+				duration: "02:15",
+				imageSrc: "/static/image_placeholder.jpg",
+				stars: "4.5",
+			},
+		],
 	},
 };

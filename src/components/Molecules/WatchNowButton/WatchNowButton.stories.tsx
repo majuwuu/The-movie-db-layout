@@ -9,7 +9,5 @@ const meta: Meta<typeof WatchNowButton> = {
 export default meta;
 
 export const Default: StoryObj<typeof WatchNowButton> = {
-	args: {
-		label: "Watch Now",
-	},
+	args: {},
 };

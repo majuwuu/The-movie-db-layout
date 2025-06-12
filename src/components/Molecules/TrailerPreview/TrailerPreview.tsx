@@ -2,18 +2,21 @@ import "../../../tailwind.css";
 import PreviewCard from "../../Atoms/PreviewCard";
 import CardDescription from "../CardDescription/CardDescription";
 import Viewers from "../../Molecules/Viewers";
+import TrendingTag from "../TrendingTag";
+import CurrentViewers from "../CurrentViewers";
+import WatchNowButton from "../WatchNowButton";
 
 export interface CardDescriptionProps {
 	title: string;
-	country: string;
+	secondaryTitle: string;
 	link: string;
-	timeAgo: string;
+	thirdTitle?: string;
 	duration: string;
 	views?: string;
 	stars?: string;
 	currentViewers?: {
-		imageSrc1: string;
-		imageSrc2: string;
+		imageSrc: string;
+		id: string;
 	}[];
 	trend?: boolean;
 	imageSrc: string;
@@ -21,9 +24,9 @@ export interface CardDescriptionProps {
 
 const TrailerPreview: React.FC<CardDescriptionProps> = ({
 	title,
-	country,
+	secondaryTitle,
 	link,
-	timeAgo,
+	thirdTitle,
 	duration,
 	imageSrc,
 	views,
@@ -32,10 +35,23 @@ const TrailerPreview: React.FC<CardDescriptionProps> = ({
 	trend,
 }) => {
 	return (
-		<div className="w-full relative overflow-hidden ">
+		<div className="w-full h-full relative rounded-[20px] overflow-hidden ">
 			<div>
-				{currentViewers && <></>}
-				{trend && <></>}
+				{title === "" && (
+					<div className="absolute cursor-pointer bottom-0 left-0 ml-6 mb-4">
+						<WatchNowButton />
+					</div>
+				)}
+				{currentViewers?.length && (
+					<div className="absolute  top-0 left-0 ml-6 mt-4">
+						<CurrentViewers currentViewers={currentViewers} />
+					</div>
+				)}
+				{trend && (
+					<div className="absolute  top-0 left-0 ml-6 mt-4">
+						<TrendingTag />
+					</div>
+				)}
 				{views && (
 					<div className="absolute top-0 right-0 mx-2">
 						<Viewers viewers={views} />
@@ -44,14 +60,16 @@ const TrailerPreview: React.FC<CardDescriptionProps> = ({
 				<PreviewCard imageSrc={imageSrc} />
 			</div>
 			<div className="absolute left-0 bottom-0 w-full">
-				<CardDescription
-					title={title}
-					country={country}
-					link={link}
-					timeAgo={timeAgo}
-					duration={duration}
-					stars={stars}
-				/>
+				{title && (
+					<CardDescription
+						title={title}
+						secondaryTitle={secondaryTitle}
+						link={link}
+						thirdTitle={thirdTitle}
+						duration={duration}
+						stars={stars}
+					/>
+				)}
 			</div>
 		</div>
 	);

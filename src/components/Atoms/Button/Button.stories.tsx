@@ -9,6 +9,6 @@ export default meta;
 
 export const Default: StoryObj<typeof Button> = {
 	args: {
-		label: "Click me",
+		label: "Watch Now",
 	},
 };

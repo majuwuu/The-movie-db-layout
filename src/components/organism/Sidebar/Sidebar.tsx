@@ -24,8 +24,8 @@ export interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ videos, category }) => {
 	return (
-		<aside className="bg-[#17171B] w-1/2 pt-8  items-center min-h-full flex flex-col m-0 p-0">
-			<div className="flex   w-full justify-start px-12">
+		<aside className="bg-[#17171B] xl:w-[450px] lg:w-[450px] sm:w-full pt-8  items-center min-h-full flex flex-col m-0 p-0">
+			<div className="flex   w-full justify-start px-10">
 				<PrimaryText size={"18px"} label="New trailers" weigth="bold" />
 			</div>
 			{videos.map((video, idx) => (

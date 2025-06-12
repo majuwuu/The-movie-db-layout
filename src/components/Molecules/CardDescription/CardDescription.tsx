@@ -3,6 +3,7 @@ import PrimaryText from "../../Atoms/PrimaryText";
 import "../../../tailwind.css";
 import PlayItem from "../../Atoms/PlayItem";
 import TagItem from "../../Atoms/TagItem";
+import Rated from "../Rated";
 
 export interface CardDescriptionProps {
 	title: string;
@@ -10,6 +11,7 @@ export interface CardDescriptionProps {
 	link: string;
 	timeAgo: string;
 	duration: string;
+	stars?: string;
 }
 
 const CardDescription: React.FC<CardDescriptionProps> = ({
@@ -18,6 +20,7 @@ const CardDescription: React.FC<CardDescriptionProps> = ({
 	link,
 	timeAgo,
 	duration,
+	stars,
 }) => {
 	return (
 		<div
@@ -30,7 +33,7 @@ const CardDescription: React.FC<CardDescriptionProps> = ({
 			/>
 			<div className="flex bg-red-40 justify-between px-2 items-center relative z-10">
 				<div className="flex">
-					<div className="mt-2">
+					<div className=" w-8 h-12 flex flex-col justify-start mx-2">
 						<PlayItem />
 					</div>
 					<div className="flex -mt-1 ml-4 flex-col leading-[16px]">
@@ -41,8 +44,11 @@ const CardDescription: React.FC<CardDescriptionProps> = ({
 				</div>
 				<div className="flex">
 					<div className="w-1 h-8 mr-4 bg-gradient-to-b from-white/10 backdrop-blur-xl via-white/80 to-white/10"></div>
-
-					<TagItem label={duration} color="#FFFFFF" />
+					{stars ? (
+						<Rated rate={stars} />
+					) : (
+						<TagItem label={duration} color="#FFFFFF" />
+					)}
 				</div>
 			</div>
 		</div>

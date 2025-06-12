@@ -1,4 +1,4 @@
-export interface AddGenres {
+export interface AddGenresProps {
     category: {
         allCategories: string[];
         favouriteCategorie: string[];
@@ -12,20 +12,20 @@ export interface CardDescriptionProps {
     duration: string;
     stars?: string;
 }
-export type CurrentUser = {
+export type CurrentUserProps = {
     imageSrc: string;
     id: string;
 };
 export type CurrentViewersProps = {
-    currentViewers: CurrentUser[];
+    currentViewers: CurrentUserProps[];
 };
-export interface FavouriteGenres {
+export interface FavouriteGenresProps {
     category: {
         allCategories: string[];
         favouriteCategorie: string[];
     };
 }
-export interface HeaderUtilities {
+export interface HeaderUtilitiesProps {
     userData: {
         name: string;
         imageSrc: string;
@@ -37,7 +37,7 @@ export interface ProfileComponentProps {
 export interface RatedProps {
     rate: string;
 }
-export interface SortBy {
+export interface SortByProps {
     category: {
         allCategories: string[];
         favouriteCategorie: string[];

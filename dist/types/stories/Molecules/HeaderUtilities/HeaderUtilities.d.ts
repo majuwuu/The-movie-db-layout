@@ -1,5 +1,5 @@
 import React from "react";
 import "../../../tailwind.css";
-import { HeaderUtilities } from "../../../types/molecules";
-declare const HeaderUtilities: React.FC<HeaderUtilities>;
+import { HeaderUtilitiesProps } from "../../../types/molecules";
+declare const HeaderUtilities: React.FC<HeaderUtilitiesProps>;
 export default HeaderUtilities;

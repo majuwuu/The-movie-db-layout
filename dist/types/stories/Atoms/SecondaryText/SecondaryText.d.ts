@@ -1,5 +1,5 @@
 import React from "react";
 import "../../../tailwind.css";
-import { SecondaryText } from "../../../types/atoms";
-declare const SecondaryText: React.FC<SecondaryText>;
+import { SecondaryTextProps } from "../../../types/atoms";
+declare const SecondaryText: React.FC<SecondaryTextProps>;
 export default SecondaryText;

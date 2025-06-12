@@ -1,5 +1,5 @@
 import React from "react";
 import "../../../tailwind.css";
-import { AddGenres } from "../../../types/molecules";
-declare const AddGenres: React.FC<AddGenres>;
+import { AddGenresProps } from "../../../types/molecules";
+declare const AddGenres: React.FC<AddGenresProps>;
 export default AddGenres;

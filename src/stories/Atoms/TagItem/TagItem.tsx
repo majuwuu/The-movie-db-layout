@@ -1,8 +1,8 @@
 import React from "react";
 import "../../../tailwind.css";
-import { TagItem } from "../../../types/atoms";
+import { TagItemProps } from "../../../types/atoms";
 
-const TagItem: React.FC<TagItem> = ({ label, color }) => {
+const TagItem: React.FC<TagItemProps> = ({ label, color }) => {
 	return (
 		<div className="rounded-sm">
 			<p

@@ -9,15 +9,15 @@ export interface HeaderProps {
 	}[];
 }
 
-export type Viewer = {
+export type ViewerProps = {
 	id: string;
 	imageSrc: string;
 };
 
-export type BannerPromo = {
+export type BannerPromoProps = {
 	title: string;
 	imageSrc: string;
-	currentViewers?: Viewer[];
+	currentViewers?: ViewerProps[];
 	description?: string;
 	genre?: string;
 };
@@ -31,12 +31,12 @@ export type ContinueWatchingItem = {
 	imageSrc: string;
 	trend?: boolean;
 	views?: string;
-	currentViewers?: Viewer[];
+	currentViewers?: ViewerProps[];
 	description?: string;
 	genre?: string;
 };
 
-export type PopularItem = {
+export type PopularItemProps = {
 	title: string;
 	secondaryTitle: string;
 	link: string;
@@ -48,11 +48,12 @@ export type PopularItem = {
 	genre?: string;
 };
 
-export type MainContent = {
-	bannerPromo: BannerPromo;
+export type MainContentProps = {
+	bannerPromo: BannerPromoProps;
 	continueWatching: ContinueWatchingItem[];
-	popular: PopularItem[];
+	popular: PopularItemProps[];
 };
+
 export interface SidebarProps {
 	videos: {
 		title: string;
@@ -70,4 +71,5 @@ export interface SidebarProps {
 		allCategories: string[];
 		favouriteCategorie: string[];
 	};
+	onCloseSideBar?: () => void;
 }

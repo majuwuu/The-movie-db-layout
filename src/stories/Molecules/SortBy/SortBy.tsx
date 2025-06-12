@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import PrimaryText from "../../Atoms/PrimaryText";
 import "../../../tailwind.css";
 import CaretUpDown from "../../Atoms/CaretUpDown";
-import { SortBy } from "../../../types/molecules";
+import { SortByProps } from "../../../types/molecules";
 
-const SortBy: React.FC<SortBy> = ({ category }) => {
+const SortBy: React.FC<SortByProps> = ({ category }) => {
 	const [open, setOpen] = useState(false);
 	const [selected, setSelected] = useState("Today");
 

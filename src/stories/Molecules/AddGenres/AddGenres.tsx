@@ -3,9 +3,9 @@ import PrimaryText from "../../Atoms/PrimaryText";
 import "../../../tailwind.css";
 import TagItem from "../../Atoms/TagItem";
 import PlusIcon from "../../Atoms/PlusIcon";
-import { AddGenres } from "../../../types/molecules";
+import { AddGenresProps } from "../../../types/molecules";
 
-const AddGenres: React.FC<AddGenres> = ({ category }) => {
+const AddGenres: React.FC<AddGenresProps> = ({ category }) => {
 	return (
 		<div className="bg-[#1E1E21] w-full h-full px-6 lg:px-12  ">
 			<div className="pb-6 gap-1 flex items-center">

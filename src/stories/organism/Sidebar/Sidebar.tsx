@@ -8,7 +8,11 @@ import SortBy from "../../Molecules/SortBy";
 import PlayItem from "../../Atoms/PlayItem";
 import { SidebarProps } from "../../../types/organism";
 
-const Sidebar: React.FC<SidebarProps> = ({ videos, category }) => {
+const Sidebar: React.FC<SidebarProps> = ({
+	videos,
+	category,
+	onCloseSideBar,
+}) => {
 	return (
 		<aside className="bg-[#17171B] relative w-full lg:w-[450px] pt-8 items-center min-h-screen flex flex-col m-0 p-0 border-r border-[#323232]">
 			<div className="flex w-full justify-between items-center px-6 sm:px-10 mb-4 whitespace-nowrap">
@@ -42,7 +46,9 @@ const Sidebar: React.FC<SidebarProps> = ({ videos, category }) => {
 				<FavouriteGenres category={category} />
 				<AddGenres category={category} />
 			</div>
-			<div className="absolute top-1/12 -right-4.5 transform rotate-180 w-7 hidden lg:block">
+			<div
+				className="absolute cursor-pointer top-1/12 -right-4.5 transform rotate-180 w-7 hidden lg:block"
+				onClick={onCloseSideBar}>
 				<PlayItem />
 			</div>
 		</aside>

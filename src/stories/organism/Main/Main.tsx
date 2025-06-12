@@ -2,9 +2,9 @@ import React from "react";
 import "../../../tailwind.css";
 import PrimaryText from "../../Atoms/PrimaryText";
 import TrailerPreview from "../../Molecules/TrailerPreview";
-import { MainContent } from "../../../types/organism";
+import { MainContentProps } from "../../../types/organism";
 
-const Main: React.FC<MainContent> = ({
+const Main: React.FC<MainContentProps> = ({
 	bannerPromo,
 	continueWatching,
 	popular,

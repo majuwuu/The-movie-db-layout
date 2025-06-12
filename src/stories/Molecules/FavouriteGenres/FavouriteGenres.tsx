@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import PrimaryText from "../../Atoms/PrimaryText";
 import "../../../tailwind.css";
 import TagItem from "../../Atoms/TagItem";
-import { FavouriteGenres } from "../../../types/molecules";
+import { FavouriteGenresProps } from "../../../types/molecules";
 
-const FavouriteGenres: React.FC<FavouriteGenres> = ({ category }) => {
+const FavouriteGenres: React.FC<FavouriteGenresProps> = ({ category }) => {
 	const tagColors = ["#F36F45", "#8769FF", "#61D1EA"] as const;
 	let lastColor: (typeof tagColors)[number] | null = null;
 

@@ -4,9 +4,9 @@ import SearchItem from "../../Atoms/SearchItem";
 import NotificationItem from "../../Atoms/NotificationItem";
 import SettingsItem from "../../Atoms/SettingsItem";
 import ProfileComponent from "../ProfileComponent";
-import { HeaderUtilities } from "../../../types/molecules";
+import { HeaderUtilitiesProps } from "../../../types/molecules";
 
-const HeaderUtilities: React.FC<HeaderUtilities> = ({ userData }) => {
+const HeaderUtilities: React.FC<HeaderUtilitiesProps> = ({ userData }) => {
 	return (
 		<nav className="bg-[#17171B] w-min flex relative space-x-6 py-4 px-6 cursor-pointer">
 			<SearchItem />

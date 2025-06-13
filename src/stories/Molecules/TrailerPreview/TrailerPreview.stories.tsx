@@ -2,8 +2,17 @@ import type { Meta, StoryObj } from "@storybook/react";
 import TrailerPreview from "./index";
 
 const meta: Meta<typeof TrailerPreview> = {
-	component: TrailerPreview,
 	title: "Molecules/TrailerPreview",
+	component: TrailerPreview,
+	tags: ["autodocs"],
+	parameters: {
+		docs: {
+			description: {
+				component:
+					"This component displays a trailer preview, including title, duration, views, image, and more. It has different types depending on the props it receives.",
+			},
+		},
+	},
 };
 
 export default meta;

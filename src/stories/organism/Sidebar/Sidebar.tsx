@@ -47,7 +47,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 				<AddGenres category={category} />
 			</div>
 			<div
-				className="absolute cursor-pointer right-0 xs:top-0 lg:top-1/12  lg:-right-4.5 transform rotate-180 w-7 lg:block"
+				className="absolute cursor-pointer right-0 xs:-top-4 lg:top-1/12  lg:-right-4.5 transform rotate-180 w-7 lg:block"
 				onClick={onCloseSideBar}>
 				<PlayItem />
 			</div>

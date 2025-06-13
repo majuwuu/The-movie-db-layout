@@ -35,7 +35,7 @@ const PreviewCard: React.FC<PreviewCardProps> = ({
 
 			{isHovered && description && (
 				<div className="absolute top-0 left-0 w-full h-full bg-black/60 backdrop-blur-sm transition-opacity duration-300 ease-in-out">
-					<div className="pt-3 pl-3">
+					<div className="pt-8 pl-8">
 						<PrimaryText size={"14px"} weigth="bold" label={title ?? ""} />
 						<PrimaryText size={"10px"} weigth="normal" label={genre ?? ""} />
 						<div className="overflow-hidden text-ellipsis line-clamp-2 max-h-full">

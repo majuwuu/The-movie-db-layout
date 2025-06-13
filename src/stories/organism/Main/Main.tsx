@@ -42,7 +42,7 @@ const Main: React.FC<MainContentProps> = ({
 							color="#606265"
 						/>
 					</div>
-					<div className="pr-14 cursor-pointer">
+					<div className="cursor-pointer">
 						<PrimaryText
 							label={`All Movies >`}
 							size="12px"

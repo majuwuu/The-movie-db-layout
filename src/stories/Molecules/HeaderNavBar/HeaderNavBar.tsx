@@ -31,7 +31,7 @@ const HeaderNavBar: React.FC<HeaderNavBarProps> = ({ navItems }) => {
 						/>
 					</a>
 					{item.title === activeItem && (
-						<div className="absolute -bottom-5 sm:-bottom-5 md:-bottom-4.5 mt-1 transition-all duration-100 ease-in-out">
+						<div className="absolute -bottom-7 sm:-bottom-2 sm:pb-1 xl:-bottom-5  transition-all duration-100 ease-in-out">
 							<Caret />
 						</div>
 					)}

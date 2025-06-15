@@ -405,7 +405,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
                 color: s.title !== i ? "#606265" : void 0
               }
             ) }),
-            s.title === i && /* @__PURE__ */ e.jsx("div", { className: "absolute -bottom-5 sm:-bottom-5 md:-bottom-4.5 mt-1 transition-all duration-100 ease-in-out", children: /* @__PURE__ */ e.jsx(we, {}) })
+            s.title === i && /* @__PURE__ */ e.jsx("div", { className: "absolute -bottom-7 sm:-bottom-2 sm:pb-1 xl:-bottom-5  transition-all duration-100 ease-in-out", children: /* @__PURE__ */ e.jsx(we, {}) })
           ]
         },
         s.title

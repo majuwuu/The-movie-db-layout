@@ -16,7 +16,7 @@ const CardDescription: React.FC<CardDescriptionProps> = ({
 }) => {
 	return (
 		<div
-			className="w-full bg-black/40 pt-3 
+			className="w-full bg-black/40 minx-h-[60px]
 			rounded-b-xl rounded-t-xl backdrop-blur-[5px] 
 		 relative
 		 cursor-pointer
@@ -30,7 +30,7 @@ const CardDescription: React.FC<CardDescriptionProps> = ({
 					<div className=" w-7 h-12 flex flex-col justify-start mx-2">
 						<PlayItem />
 					</div>
-					<div className="flex -mt-1 ml-1 flex-col leading-[16px]">
+					<div className="flex -mt-1 ml-1 flex-col leading-[13px]">
 						<div title={title}>
 							<PrimaryText size={"11px"} weigth={"bold"} label={title} />
 						</div>

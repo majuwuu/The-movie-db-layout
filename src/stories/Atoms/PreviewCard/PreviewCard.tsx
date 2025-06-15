@@ -28,7 +28,7 @@ const PreviewCard: React.FC<PreviewCardProps> = ({
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}>
 			<img
-				className="w-full h-full max-h-[204px] object-cover"
+				className="w-full h-full max-h-[150px] object-cover"
 				src={imageSrc}
 				alt="Preview"
 			/>

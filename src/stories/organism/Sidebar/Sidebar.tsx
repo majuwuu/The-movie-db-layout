@@ -26,7 +26,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 				{videos.map((video, idx) => (
 					<div
 						key={idx}
-						className="w-full px-6 max-w-sm sm:max-w-md md:max-w-lg rounded-3xl overflow-hidden">
+						className="w-full max-h-[150px]  px-6 max-w-sm sm:max-w-md md:max-w-lg rounded-3xl overflow-hidden">
 						<TrailerPreview
 							title={video.title}
 							secondaryTitle={video.secondaryTitle}

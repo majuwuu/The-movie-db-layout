@@ -7,16 +7,18 @@ import { AddGenresProps } from "../../../types/molecules";
 
 const AddGenres: React.FC<AddGenresProps> = ({ category }) => {
 	return (
-		<div className="bg-[#1E1E21] w-full h-full px-6 lg:px-12 lg:pb-6  ">
-			<div className="pb-6 gap-1 flex items-center">
-				<PlusIcon />
+		<div className=" w-full h-full px-6 lg:px-12.5 lg:pb-6  ">
+			<div className=" py-5 gap-2 flex items-center">
+				<div className="pt-1 h-4">
+					<PlusIcon />
+				</div>
 				<PrimaryText
 					size={"11px"}
 					label="Add your favourite genres"
 					weigth="thin"
 				/>
 			</div>
-			<div className="flex flex-wrap gap-5 w-58 pb-8 ">
+			<div className="flex flex-wrap gap-5 w-58 pb-4.5 ">
 				{category.favouriteCategorie.map((genre: string, idx: number) => (
 					<div className="cursor-pointer">
 						<TagItem key={idx} label={genre} color={"#FFFFFF"} />

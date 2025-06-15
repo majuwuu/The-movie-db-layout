@@ -15,10 +15,10 @@ const SortBy: React.FC<SortByProps> = ({ category }) => {
 
 	return (
 		<div
-			className="flex w-full h-full items-center relative cursor-pointer"
+			className="flex w-full h-full items-center  relative cursor-pointer"
 			onClick={() => setOpen((prev) => !prev)}>
 			<PrimaryText label={"Sort by/"} weigth={"normal"} size={"12px"} />
-			<div className="ml-2 mr-1  relative">
+			<div className="ml-3.5 mr-1  relative">
 				<PrimaryText
 					label={selected}
 					weigth={"normal"}
@@ -38,7 +38,9 @@ const SortBy: React.FC<SortByProps> = ({ category }) => {
 					</div>
 				)}
 			</div>
-			<CaretUpDown />
+			<div className="pt-1">
+				<CaretUpDown />
+			</div>
 		</div>
 	);
 };

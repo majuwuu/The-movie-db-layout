@@ -4,7 +4,7 @@ import TagItem from "../../Atoms/TagItem";
 
 const TrendingTag: React.FC = () => {
 	return (
-		<div className=" w-full h-full ">
+		<div className=" w-full h-full  ">
 			<TagItem label={"#1 Trending 🔥"} color="#FFFFFF" />
 		</div>
 	);

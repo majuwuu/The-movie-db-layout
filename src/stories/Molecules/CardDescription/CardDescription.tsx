@@ -16,8 +16,8 @@ const CardDescription: React.FC<CardDescriptionProps> = ({
 }) => {
 	return (
 		<div
-			className="w-full  pt-4 pb-1
-			rounded-b-xl rounded-t-xl backdrop-blur-[5px] bg-black/70 
+			className="w-full bg-black/40 pt-3 
+			rounded-b-xl rounded-t-xl backdrop-blur-[5px] 
 		 relative
 		 cursor-pointer
 		 ">
@@ -25,8 +25,8 @@ const CardDescription: React.FC<CardDescriptionProps> = ({
 				className="absolute w-full 
 			h-full z-0 text-white "
 			/>
-			<div className="flex bg-red-40 justify-between px-2 items-center relative z-10">
-				<div className="flex">
+			<div className="flex  justify-between px-4.5 items-center  relative z-10">
+				<div className="flex pt-3">
 					<div className=" w-7 h-12 flex flex-col justify-start mx-2">
 						<PlayItem />
 					</div>
@@ -40,8 +40,8 @@ const CardDescription: React.FC<CardDescriptionProps> = ({
 						)}
 					</div>
 				</div>
-				<div className="flex">
-					<div className="w-1 h-8 mr-4 bg-gradient-to-b from-white/10 backdrop-blur-xl via-white/80 to-white/10"></div>
+				<div className="flex ">
+					<div className="w-1 h-8 mr-4 bg-gradient-to-b from-white/20 backdrop-blur-xl via-white/50 to-white/20"></div>
 					<div className="mr-2">
 						{stars ? (
 							<Rated rate={stars} />

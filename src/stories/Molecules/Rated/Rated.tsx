@@ -7,10 +7,10 @@ import { RatedProps } from "../../../types/molecules";
 const Rated: React.FC<RatedProps> = ({ rate }) => {
 	return (
 		<div className="flex items-center w-full h-full ">
-			<div className="w-2.5 mt-1 mx-2">
+			<div className="w-2.5 mt-2 mb-5  mx-0.5">
 				<StarItem />
 			</div>
-			<div>
+			<div className="mb-5 ">
 				<PrimaryText size="10px" weigth="normal" label={rate} />
 			</div>
 		</div>

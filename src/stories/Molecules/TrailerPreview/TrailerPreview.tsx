@@ -33,12 +33,12 @@ const TrailerPreview: React.FC<VideoCardDescriptionProps> = ({
 					</div>
 				)}
 				{title === "" && (
-					<div className="absolute cursor-pointer -bottom-22 lg:-bottom-24  w-full h-full left-0 ml-6">
+					<div className="absolute cursor-pointer -bottom-22 lg:-bottom-20.5  w-full h-full left-0 ml-6">
 						<WatchNowButton />
 					</div>
 				)}
 				{trend && (
-					<div className="absolute top-2 lg:-bottom-24  left-0 ml-2">
+					<div className="absolute top-2 lg:-bottom-24 left-0 ml-2">
 						<TrendingTag />
 					</div>
 				)}

@@ -16,7 +16,7 @@ const HeaderNavBar: React.FC<HeaderNavBarProps> = ({ navItems }) => {
 	return (
 		<nav
 			className="bg-[#17171B] w-min flex relative gap-2
-		 lg:gap-13 py-4 px-6 cursor-pointer lg:ml-[260px]">
+		 lg:gap-15 pt-9.5 px-6 cursor-pointer lg:ml-[226px]">
 			{navItems.map((item) => (
 				<div
 					key={item.title}
@@ -31,7 +31,7 @@ const HeaderNavBar: React.FC<HeaderNavBarProps> = ({ navItems }) => {
 						/>
 					</a>
 					{item.title === activeItem && (
-						<div className="absolute -bottom-9 mt-1 transition-all duration-100 ease-in-out">
+						<div className="absolute -bottom-5 sm:-bottom-1  mt-1 transition-all duration-100 ease-in-out">
 							<Caret />
 						</div>
 					)}

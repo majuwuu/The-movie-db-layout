@@ -14,19 +14,19 @@ const Sidebar: React.FC<SidebarProps> = ({
 	onCloseSideBar,
 }) => {
 	return (
-		<aside className="bg-[#17171B] relative w-full lg:w-[450px] pt-8 items-center xs:min-h-screen flex flex-col m-0 p-0 border-r border-[#323232]">
-			<div className="flex w-full justify-between items-center px-6 sm:px-10 mb-4 whitespace-nowrap">
+		<aside className="bg-[#17171B] relative w-full lg:w-[450px] pt-8.5  items-center xs:min-h-screen flex flex-col m-0 p-0 border-r border-[#323232]">
+			<div className="flex w-full justify-between items-center px-6  lg:px-12.5 sm:px-6 whitespace-nowrap">
 				<PrimaryText size={"18px"} label="New trailers" weigth="bold" />
 				<div className="flex justify-between items-center w-auto">
 					<SortBy category={category} />
 				</div>
 			</div>
 
-			<div className="flex flex-col gap-6 w-full items-center px-4 sm:px-6">
+			<div className="flex flex-col pt-5.5 pb-5 sm:px-6.5 gap-5.5 w-full items-center ">
 				{videos.map((video, idx) => (
 					<div
 						key={idx}
-						className="w-full max-w-sm sm:max-w-md md:max-w-lg rounded-3xl overflow-hidden">
+						className="w-full px-6 max-w-sm sm:max-w-md md:max-w-lg rounded-3xl overflow-hidden">
 						<TrailerPreview
 							title={video.title}
 							secondaryTitle={video.secondaryTitle}
@@ -42,7 +42,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 				))}
 			</div>
 
-			<div className="w-full mt-8">
+			<div className=" bg-[#1E1E21] w-full">
 				<FavouriteGenres category={category} />
 				<AddGenres category={category} />
 			</div>

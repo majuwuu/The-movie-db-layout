@@ -15,11 +15,11 @@ const FavouriteGenres: React.FC<FavouriteGenresProps> = ({ category }) => {
 		return color;
 	};
 	return (
-		<div className="bg-[#1E1E21] w-full h-full px-6 lg:px-12 ">
-			<div className="pb-6 pt-6">
+		<div className=" w-full h-full px-6 lg:px-12.5 ">
+			<div className="pb-7.5 pt-6">
 				<PrimaryText size={"18px"} label="Favourite Genres" weigth="bold" />
 			</div>
-			<div className="flex flex-wrap gap-5 w-58 pb-4 ">
+			<div className="flex flex-wrap gap-5 w-58  ">
 				{category.allCategories.map((genre: string, idx: number) => (
 					<div className="cursor-pointer">
 						<TagItem key={idx} color={getRandomColor()} label={genre} />

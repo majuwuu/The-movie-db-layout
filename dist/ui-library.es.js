@@ -437,7 +437,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
         /* @__PURE__ */ e.jsx(
           "img",
           {
-            className: "w-full h-full max-h-[204px] object-cover",
+            className: "w-full h-full max-h-[150px] object-cover",
             src: l,
             alt: "Preview"
           }
@@ -509,7 +509,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
 }) => /* @__PURE__ */ e.jsxs(
   "div",
   {
-    className: `w-full bg-black/40 pt-3 \r
+    className: `w-full bg-black/40 minx-h-[60px]\r
 			rounded-b-xl rounded-t-xl backdrop-blur-[5px] \r
 		 relative\r
 		 cursor-pointer\r
@@ -525,7 +525,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
       /* @__PURE__ */ e.jsxs("div", { className: "flex  justify-between px-4.5 items-center  relative z-10", children: [
         /* @__PURE__ */ e.jsxs("div", { className: "flex pt-3", children: [
           /* @__PURE__ */ e.jsx("div", { className: " w-7 h-12 flex flex-col justify-start mx-2", children: /* @__PURE__ */ e.jsx(I, {}) }),
-          /* @__PURE__ */ e.jsxs("div", { className: "flex -mt-1 ml-1 flex-col leading-[16px]", children: [
+          /* @__PURE__ */ e.jsxs("div", { className: "flex -mt-1 ml-1 flex-col leading-[13px]", children: [
             /* @__PURE__ */ e.jsx("div", { title: l, children: /* @__PURE__ */ e.jsx(d, { size: "11px", weigth: "bold", label: l }) }),
             /* @__PURE__ */ e.jsx(d, { size: "10px", weigth: "thin", label: i }),
             s && /* @__PURE__ */ e.jsx(d, { size: "10px", weigth: "thin", label: s })
@@ -810,7 +810,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
       className: "flex w-full h-full items-center  relative cursor-pointer",
       onClick: () => n((x) => !x),
       children: [
-        /* @__PURE__ */ e.jsx(d, { label: "Sort by/", weigth: "normal", size: "12px" }),
+        /* @__PURE__ */ e.jsx(d, { label: "Sort by", weigth: "normal", size: "12px" }),
         /* @__PURE__ */ e.jsxs("div", { className: "ml-3.5 mr-1  relative", children: [
           /* @__PURE__ */ e.jsx(
             d,
@@ -847,7 +847,7 @@ const xe = () => /* @__PURE__ */ e.jsx(
   /* @__PURE__ */ e.jsx("div", { className: "flex flex-col pt-5.5 pb-5 sm:px-6.5 gap-5.5 w-full items-center ", children: l.map((s, a) => /* @__PURE__ */ e.jsx(
     "div",
     {
-      className: "w-full px-6 max-w-sm sm:max-w-md md:max-w-lg rounded-3xl overflow-hidden",
+      className: "w-full max-h-[150px]  px-6 max-w-sm sm:max-w-md md:max-w-lg rounded-3xl overflow-hidden",
       children: /* @__PURE__ */ e.jsx(
         R,
         {

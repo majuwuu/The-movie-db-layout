@@ -7,7 +7,7 @@ import { AddGenresProps } from "../../../types/molecules";
 
 const AddGenres: React.FC<AddGenresProps> = ({ category }) => {
 	return (
-		<div className=" w-full h-full px-6 lg:px-12.5 lg:pb-6  ">
+		<div className=" w-full px-6 lg:px-12.5 lg:pb-6  ">
 			<div className=" py-5 gap-2 flex items-center">
 				<div className="pt-1 h-4">
 					<PlusIcon />

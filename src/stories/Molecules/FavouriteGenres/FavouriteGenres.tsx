@@ -15,7 +15,7 @@ const FavouriteGenres: React.FC<FavouriteGenresProps> = ({ category }) => {
 		return color;
 	};
 	return (
-		<div className=" w-full h-full px-6 lg:px-12.5 ">
+		<div className=" w-full px-6 lg:px-12.5 ">
 			<div className="pb-7.5 pt-6">
 				<PrimaryText size={"18px"} label="Favourite Genres" weigth="bold" />
 			</div>

@@ -5,8 +5,8 @@ const PlayItem = () => {
 	return (
 		<div className="w-full h-full">
 			<svg
-				width="auto"
-				height="auto"
+				width="100%"
+				height="100%"
 				viewBox="0 0 10 11"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg">

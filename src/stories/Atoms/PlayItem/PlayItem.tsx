@@ -6,8 +6,8 @@ const PlayItem = () => {
 		<div className="w-auto h-auto flex justify-center items-center rounded-full bg-[#C4C4C4]">
 			<div className="w-full p-1 h-full">
 				<svg
-					width="auto"
-					height="auto"
+					width="100%"
+					height="100%"
 					viewBox="0 0 12 12"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg">

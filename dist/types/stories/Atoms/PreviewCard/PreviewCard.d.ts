@@ -1,4 +1,3 @@
-import React from "react";
 import { PreviewCardProps } from "../../../types/atoms";
-declare const PreviewCard: React.FC<PreviewCardProps>;
+declare const PreviewCard: ({ imageSrc, title, description, onHoverChange, genre, }: PreviewCardProps) => import("react/jsx-runtime").JSX.Element;
 export default PreviewCard;

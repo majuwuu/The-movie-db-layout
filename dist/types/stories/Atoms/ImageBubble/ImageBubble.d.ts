@@ -1,4 +1,3 @@
-import React from "react";
 import { ImageBubbleProps } from "../../../types/atoms";
-declare const ImageBubble: React.FC<ImageBubbleProps>;
+declare const ImageBubble: ({ children }: ImageBubbleProps) => import("react/jsx-runtime").JSX.Element;
 export default ImageBubble;

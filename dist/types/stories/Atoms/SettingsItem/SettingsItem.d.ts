@@ -1,3 +1,2 @@
-import React from "react";
-declare const SettingsItem: React.FC;
+declare const SettingsItem: () => import("react/jsx-runtime").JSX.Element;
 export default SettingsItem;

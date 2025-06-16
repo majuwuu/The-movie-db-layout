@@ -1,5 +1,4 @@
-import React from "react";
 import "../../../tailwind.css";
 import { ProfileComponentProps } from "../../../types/molecules";
-declare const ProfileComponent: React.FC<ProfileComponentProps>;
+declare const ProfileComponent: ({ imageSrc }: ProfileComponentProps) => import("react/jsx-runtime").JSX.Element;
 export default ProfileComponent;

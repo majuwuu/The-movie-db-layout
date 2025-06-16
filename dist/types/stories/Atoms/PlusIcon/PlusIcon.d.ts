@@ -1,4 +1,3 @@
-import React from "react";
 import "../../../tailwind.css";
-declare const PlusIcon: React.FC;
+declare const PlusIcon: () => import("react/jsx-runtime").JSX.Element;
 export default PlusIcon;

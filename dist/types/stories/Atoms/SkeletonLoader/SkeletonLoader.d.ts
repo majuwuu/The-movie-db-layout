@@ -1,3 +1,2 @@
-import React from "react";
-declare const SkeletonLoader: React.FC;
+declare const SkeletonLoader: () => import("react/jsx-runtime").JSX.Element;
 export default SkeletonLoader;

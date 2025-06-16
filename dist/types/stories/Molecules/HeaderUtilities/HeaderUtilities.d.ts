@@ -1,5 +1,4 @@
-import React from "react";
 import "../../../tailwind.css";
 import { HeaderUtilitiesProps } from "../../../types/molecules";
-declare const HeaderUtilities: React.FC<HeaderUtilitiesProps>;
+declare const HeaderUtilities: ({ userData }: HeaderUtilitiesProps) => import("react/jsx-runtime").JSX.Element;
 export default HeaderUtilities;

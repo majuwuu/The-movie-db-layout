@@ -1,5 +1,4 @@
-import React from "react";
 import "../../../tailwind.css";
 import { ButtonProps } from "../../../types/atoms";
-declare const Button: React.FC<ButtonProps>;
+declare const Button: ({ label, size, weight }: ButtonProps) => import("react/jsx-runtime").JSX.Element;
 export default Button;

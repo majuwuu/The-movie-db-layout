@@ -8,6 +8,10 @@ export interface ImageBubbleProps {
 	children: React.ReactNode;
 }
 
+export interface ToastProps {
+	label: string;
+}
+
 export interface PreviewCardProps {
 	imageSrc: string;
 	title?: string;

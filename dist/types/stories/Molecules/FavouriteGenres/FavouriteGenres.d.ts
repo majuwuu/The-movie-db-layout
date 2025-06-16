@@ -1,5 +1,4 @@
-import React from "react";
 import "../../../tailwind.css";
 import { FavouriteGenresProps } from "../../../types/molecules";
-declare const FavouriteGenres: React.FC<FavouriteGenresProps>;
+declare const FavouriteGenres: ({ category }: FavouriteGenresProps) => import("react/jsx-runtime").JSX.Element;
 export default FavouriteGenres;

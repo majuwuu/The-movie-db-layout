@@ -1,4 +1,3 @@
-import React from "react";
 import "../../../tailwind.css";
-declare const PlayItem: React.FC;
+declare const PlayItem: () => import("react/jsx-runtime").JSX.Element;
 export default PlayItem;

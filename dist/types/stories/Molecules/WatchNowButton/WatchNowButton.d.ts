@@ -1,4 +1,3 @@
-import React from "react";
 import "../../../tailwind.css";
-declare const WatchNowButton: React.FC;
+declare const WatchNowButton: () => import("react/jsx-runtime").JSX.Element;
 export default WatchNowButton;

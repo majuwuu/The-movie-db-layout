@@ -1,5 +1,5 @@
 import ce, { useState as R } from "react";
-var S = { exports: {} }, y = {};
+var S = { exports: {} }, k = {};
 /**
  * @license React
  * react-jsx-runtime.production.js
@@ -11,25 +11,25 @@ var S = { exports: {} }, y = {};
  */
 var G;
 function oe() {
-  if (G) return y;
+  if (G) return k;
   G = 1;
   var r = Symbol.for("react.transitional.element"), t = Symbol.for("react.fragment");
-  function n(l, a, c) {
-    var x = null;
-    if (c !== void 0 && (x = "" + c), a.key !== void 0 && (x = "" + a.key), "key" in a) {
+  function i(s, a, c) {
+    var d = null;
+    if (c !== void 0 && (d = "" + c), a.key !== void 0 && (d = "" + a.key), "key" in a) {
       c = {};
-      for (var h in a)
-        h !== "key" && (c[h] = a[h]);
+      for (var f in a)
+        f !== "key" && (c[f] = a[f]);
     } else c = a;
     return a = c.ref, {
       $$typeof: r,
-      type: l,
-      key: x,
+      type: s,
+      key: d,
       ref: a !== void 0 ? a : null,
       props: c
     };
   }
-  return y.Fragment = t, y.jsx = n, y.jsxs = n, y;
+  return k.Fragment = t, k.jsx = i, k.jsxs = i, k;
 }
 var T = {};
 /**
@@ -42,165 +42,165 @@ var T = {};
  * LICENSE file in the root directory of this source tree.
  */
 var V;
-function de() {
+function xe() {
   return V || (V = 1, process.env.NODE_ENV !== "production" && function() {
-    function r(s) {
-      if (s == null) return null;
-      if (typeof s == "function")
-        return s.$$typeof === ie ? null : s.displayName || s.name || null;
-      if (typeof s == "string") return s;
-      switch (s) {
-        case E:
+    function r(l) {
+      if (l == null) return null;
+      if (typeof l == "function")
+        return l.$$typeof === ne ? null : l.displayName || l.name || null;
+      if (typeof l == "string") return l;
+      switch (l) {
+        case y:
           return "Fragment";
         case X:
           return "Profiler";
         case J:
           return "StrictMode";
-        case se:
-          return "Suspense";
         case le:
+          return "Suspense";
+        case se:
           return "SuspenseList";
         case te:
           return "Activity";
       }
-      if (typeof s == "object")
-        switch (typeof s.tag == "number" && console.error(
+      if (typeof l == "object")
+        switch (typeof l.tag == "number" && console.error(
           "Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."
-        ), s.$$typeof) {
+        ), l.$$typeof) {
           case A:
             return "Portal";
           case K:
-            return (s.displayName || "Context") + ".Provider";
+            return (l.displayName || "Context") + ".Provider";
           case Q:
-            return (s._context.displayName || "Context") + ".Consumer";
+            return (l._context.displayName || "Context") + ".Consumer";
           case ee:
-            var i = s.render;
-            return s = s.displayName, s || (s = i.displayName || i.name || "", s = s !== "" ? "ForwardRef(" + s + ")" : "ForwardRef"), s;
+            var n = l.render;
+            return l = l.displayName, l || (l = n.displayName || n.name || "", l = l !== "" ? "ForwardRef(" + l + ")" : "ForwardRef"), l;
           case re:
-            return i = s.displayName || null, i !== null ? i : r(s.type) || "Memo";
-          case Y:
-            i = s._payload, s = s._init;
+            return n = l.displayName || null, n !== null ? n : r(l.type) || "Memo";
+          case I:
+            n = l._payload, l = l._init;
             try {
-              return r(s(i));
+              return r(l(n));
             } catch {
             }
         }
       return null;
     }
-    function t(s) {
-      return "" + s;
+    function t(l) {
+      return "" + l;
     }
-    function n(s) {
+    function i(l) {
       try {
-        t(s);
-        var i = !1;
+        t(l);
+        var n = !1;
       } catch {
-        i = !0;
+        n = !0;
       }
-      if (i) {
-        i = console;
-        var o = i.error, u = typeof Symbol == "function" && Symbol.toStringTag && s[Symbol.toStringTag] || s.constructor.name || "Object";
-        return o.call(
-          i,
+      if (n) {
+        n = console;
+        var x = n.error, u = typeof Symbol == "function" && Symbol.toStringTag && l[Symbol.toStringTag] || l.constructor.name || "Object";
+        return x.call(
+          n,
           "The provided key is an unsupported type %s. This value must be coerced to a string before using it here.",
           u
-        ), t(s);
+        ), t(l);
       }
     }
-    function l(s) {
-      if (s === E) return "<>";
-      if (typeof s == "object" && s !== null && s.$$typeof === Y)
+    function s(l) {
+      if (l === y) return "<>";
+      if (typeof l == "object" && l !== null && l.$$typeof === I)
         return "<...>";
       try {
-        var i = r(s);
-        return i ? "<" + i + ">" : "<...>";
+        var n = r(l);
+        return n ? "<" + n + ">" : "<...>";
       } catch {
         return "<...>";
       }
     }
     function a() {
-      var s = P.A;
-      return s === null ? null : s.getOwner();
+      var l = z.A;
+      return l === null ? null : l.getOwner();
     }
     function c() {
       return Error("react-stack-top-frame");
     }
-    function x(s) {
-      if ($.call(s, "key")) {
-        var i = Object.getOwnPropertyDescriptor(s, "key").get;
-        if (i && i.isReactWarning) return !1;
+    function d(l) {
+      if (Y.call(l, "key")) {
+        var n = Object.getOwnPropertyDescriptor(l, "key").get;
+        if (n && n.isReactWarning) return !1;
       }
-      return s.key !== void 0;
+      return l.key !== void 0;
     }
-    function h(s, i) {
-      function o() {
-        D || (D = !0, console.error(
+    function f(l, n) {
+      function x() {
+        $ || ($ = !0, console.error(
           "%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)",
-          i
+          n
         ));
       }
-      o.isReactWarning = !0, Object.defineProperty(s, "key", {
-        get: o,
+      x.isReactWarning = !0, Object.defineProperty(l, "key", {
+        get: x,
         configurable: !0
       });
     }
     function b() {
-      var s = r(this.type);
-      return W[s] || (W[s] = !0, console.error(
+      var l = r(this.type);
+      return W[l] || (W[l] = !0, console.error(
         "Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."
-      )), s = this.props.ref, s !== void 0 ? s : null;
+      )), l = this.props.ref, l !== void 0 ? l : null;
     }
-    function w(s, i, o, u, p, f, z, M) {
-      return o = f.ref, s = {
-        $$typeof: k,
-        type: s,
-        key: i,
-        props: f,
+    function w(l, n, x, u, p, m, M, O) {
+      return x = m.ref, l = {
+        $$typeof: E,
+        type: l,
+        key: n,
+        props: m,
         _owner: p
-      }, (o !== void 0 ? o : null) !== null ? Object.defineProperty(s, "ref", {
+      }, (x !== void 0 ? x : null) !== null ? Object.defineProperty(l, "ref", {
         enumerable: !1,
         get: b
-      }) : Object.defineProperty(s, "ref", { enumerable: !1, value: null }), s._store = {}, Object.defineProperty(s._store, "validated", {
+      }) : Object.defineProperty(l, "ref", { enumerable: !1, value: null }), l._store = {}, Object.defineProperty(l._store, "validated", {
         configurable: !1,
         enumerable: !1,
         writable: !0,
         value: 0
-      }), Object.defineProperty(s, "_debugInfo", {
+      }), Object.defineProperty(l, "_debugInfo", {
         configurable: !1,
         enumerable: !1,
         writable: !0,
         value: null
-      }), Object.defineProperty(s, "_debugStack", {
-        configurable: !1,
-        enumerable: !1,
-        writable: !0,
-        value: z
-      }), Object.defineProperty(s, "_debugTask", {
+      }), Object.defineProperty(l, "_debugStack", {
         configurable: !1,
         enumerable: !1,
         writable: !0,
         value: M
-      }), Object.freeze && (Object.freeze(s.props), Object.freeze(s)), s;
+      }), Object.defineProperty(l, "_debugTask", {
+        configurable: !1,
+        enumerable: !1,
+        writable: !0,
+        value: O
+      }), Object.freeze && (Object.freeze(l.props), Object.freeze(l)), l;
     }
-    function N(s, i, o, u, p, f, z, M) {
-      var m = i.children;
-      if (m !== void 0)
+    function N(l, n, x, u, p, m, M, O) {
+      var h = n.children;
+      if (h !== void 0)
         if (u)
-          if (ne(m)) {
-            for (u = 0; u < m.length; u++)
-              C(m[u]);
-            Object.freeze && Object.freeze(m);
+          if (ie(h)) {
+            for (u = 0; u < h.length; u++)
+              C(h[u]);
+            Object.freeze && Object.freeze(h);
           } else
             console.error(
               "React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead."
             );
-        else C(m);
-      if ($.call(i, "key")) {
-        m = r(s);
-        var v = Object.keys(i).filter(function(ae) {
+        else C(h);
+      if (Y.call(n, "key")) {
+        h = r(l);
+        var v = Object.keys(n).filter(function(ae) {
           return ae !== "key";
         });
-        u = 0 < v.length ? "{key: someKey, " + v.join(": ..., ") + ": ...}" : "{key: someKey}", q[m + u] || (v = 0 < v.length ? "{" + v.join(": ..., ") + ": ...}" : "{}", console.error(
+        u = 0 < v.length ? "{key: someKey, " + v.join(": ..., ") + ": ...}" : "{key: someKey}", q[h + u] || (v = 0 < v.length ? "{" + v.join(": ..., ") + ": ...}" : "{}", console.error(
           `A props object containing a "key" prop is being spread into JSX:
   let props = %s;
   <%s {...props} />
@@ -208,77 +208,77 @@ React keys must be passed directly to JSX without using spread:
   let props = %s;
   <%s key={someKey} {...props} />`,
           u,
-          m,
+          h,
           v,
-          m
-        ), q[m + u] = !0);
+          h
+        ), q[h + u] = !0);
       }
-      if (m = null, o !== void 0 && (n(o), m = "" + o), x(i) && (n(i.key), m = "" + i.key), "key" in i) {
-        o = {};
-        for (var L in i)
-          L !== "key" && (o[L] = i[L]);
-      } else o = i;
-      return m && h(
-        o,
-        typeof s == "function" ? s.displayName || s.name || "Unknown" : s
+      if (h = null, x !== void 0 && (i(x), h = "" + x), d(n) && (i(n.key), h = "" + n.key), "key" in n) {
+        x = {};
+        for (var B in n)
+          B !== "key" && (x[B] = n[B]);
+      } else x = n;
+      return h && f(
+        x,
+        typeof l == "function" ? l.displayName || l.name || "Unknown" : l
       ), w(
-        s,
+        l,
+        h,
         m,
-        f,
         p,
         a(),
-        o,
-        z,
-        M
+        x,
+        M,
+        O
       );
     }
-    function C(s) {
-      typeof s == "object" && s !== null && s.$$typeof === k && s._store && (s._store.validated = 1);
+    function C(l) {
+      typeof l == "object" && l !== null && l.$$typeof === E && l._store && (l._store.validated = 1);
     }
-    var g = ce, k = Symbol.for("react.transitional.element"), A = Symbol.for("react.portal"), E = Symbol.for("react.fragment"), J = Symbol.for("react.strict_mode"), X = Symbol.for("react.profiler"), Q = Symbol.for("react.consumer"), K = Symbol.for("react.context"), ee = Symbol.for("react.forward_ref"), se = Symbol.for("react.suspense"), le = Symbol.for("react.suspense_list"), re = Symbol.for("react.memo"), Y = Symbol.for("react.lazy"), te = Symbol.for("react.activity"), ie = Symbol.for("react.client.reference"), P = g.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, $ = Object.prototype.hasOwnProperty, ne = Array.isArray, O = console.createTask ? console.createTask : function() {
+    var g = ce, E = Symbol.for("react.transitional.element"), A = Symbol.for("react.portal"), y = Symbol.for("react.fragment"), J = Symbol.for("react.strict_mode"), X = Symbol.for("react.profiler"), Q = Symbol.for("react.consumer"), K = Symbol.for("react.context"), ee = Symbol.for("react.forward_ref"), le = Symbol.for("react.suspense"), se = Symbol.for("react.suspense_list"), re = Symbol.for("react.memo"), I = Symbol.for("react.lazy"), te = Symbol.for("react.activity"), ne = Symbol.for("react.client.reference"), z = g.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, Y = Object.prototype.hasOwnProperty, ie = Array.isArray, P = console.createTask ? console.createTask : function() {
       return null;
     };
     g = {
-      "react-stack-bottom-frame": function(s) {
-        return s();
+      "react-stack-bottom-frame": function(l) {
+        return l();
       }
     };
-    var D, W = {}, U = g["react-stack-bottom-frame"].bind(
+    var $, W = {}, U = g["react-stack-bottom-frame"].bind(
       g,
       c
-    )(), Z = O(l(c)), q = {};
-    T.Fragment = E, T.jsx = function(s, i, o, u, p) {
-      var f = 1e4 > P.recentlyCreatedOwnerStacks++;
+    )(), Z = P(s(c)), q = {};
+    T.Fragment = y, T.jsx = function(l, n, x, u, p) {
+      var m = 1e4 > z.recentlyCreatedOwnerStacks++;
       return N(
-        s,
-        i,
-        o,
+        l,
+        n,
+        x,
         !1,
         u,
         p,
-        f ? Error("react-stack-top-frame") : U,
-        f ? O(l(s)) : Z
+        m ? Error("react-stack-top-frame") : U,
+        m ? P(s(l)) : Z
       );
-    }, T.jsxs = function(s, i, o, u, p) {
-      var f = 1e4 > P.recentlyCreatedOwnerStacks++;
+    }, T.jsxs = function(l, n, x, u, p) {
+      var m = 1e4 > z.recentlyCreatedOwnerStacks++;
       return N(
-        s,
-        i,
-        o,
+        l,
+        n,
+        x,
         !0,
         u,
         p,
-        f ? Error("react-stack-top-frame") : U,
-        f ? O(l(s)) : Z
+        m ? Error("react-stack-top-frame") : U,
+        m ? P(s(l)) : Z
       );
     };
   }()), T;
 }
 var H;
-function xe() {
-  return H || (H = 1, process.env.NODE_ENV === "production" ? S.exports = oe() : S.exports = de()), S.exports;
+function de() {
+  return H || (H = 1, process.env.NODE_ENV === "production" ? S.exports = oe() : S.exports = xe()), S.exports;
 }
-var e = xe();
+var e = de();
 const ue = () => /* @__PURE__ */ e.jsx(
   "svg",
   {
@@ -297,7 +297,7 @@ const ue = () => /* @__PURE__ */ e.jsx(
       }
     )
   }
-), me = () => /* @__PURE__ */ e.jsxs(
+), he = () => /* @__PURE__ */ e.jsxs(
   "svg",
   {
     width: "19",
@@ -310,7 +310,7 @@ const ue = () => /* @__PURE__ */ e.jsx(
       /* @__PURE__ */ e.jsx("circle", { cx: "15.6471", cy: "3.85294", r: "3.35294", fill: "#F36F45" })
     ]
   }
-), he = () => /* @__PURE__ */ e.jsxs(
+), fe = () => /* @__PURE__ */ e.jsxs(
   "svg",
   {
     width: "17",
@@ -325,7 +325,7 @@ const ue = () => /* @__PURE__ */ e.jsx(
       /* @__PURE__ */ e.jsx("circle", { cx: "3.4", cy: "14.1", r: "2.9", stroke: "white" })
     ]
   }
-), fe = () => /* @__PURE__ */ e.jsx(
+), me = () => /* @__PURE__ */ e.jsx(
   "svg",
   {
     width: "10",
@@ -335,34 +335,29 @@ const ue = () => /* @__PURE__ */ e.jsx(
     xmlns: "http://www.w3.org/2000/svg",
     children: /* @__PURE__ */ e.jsx("path", { d: "M1 1L5 5L9 1", stroke: "#C4C4C4", "stroke-linecap": "round" })
   }
-), I = ({ children: r }) => /* @__PURE__ */ e.jsx("div", { children: r }), pe = ({ imageSrc: r }) => /* @__PURE__ */ e.jsxs(
+), D = ({ children: r }) => /* @__PURE__ */ e.jsx("div", { children: r }), pe = ({ imageSrc: r }) => /* @__PURE__ */ e.jsxs(
   "div",
   {
     className: `bg-[#17171B] w-9 h-5 flex cursor-pointer justify-between\r
 		 items-center`,
     children: [
-      /* @__PURE__ */ e.jsx(I, { children: /* @__PURE__ */ e.jsx("img", { src: r, alt: "Profile Picture" }) }),
-      /* @__PURE__ */ e.jsx("div", { className: "", children: /* @__PURE__ */ e.jsx(fe, {}) })
+      /* @__PURE__ */ e.jsx(D, { children: /* @__PURE__ */ e.jsx("img", { src: r, alt: "Profile Picture" }) }),
+      /* @__PURE__ */ e.jsx("div", { className: "", children: /* @__PURE__ */ e.jsx(me, {}) })
     ]
   }
 ), je = ({ userData: r }) => /* @__PURE__ */ e.jsxs("nav", { className: "bg-[#17171B] w-min flex relative gap-5.5 pt-10.5 px-6 cursor-pointer", children: [
   /* @__PURE__ */ e.jsx(ue, {}),
-  /* @__PURE__ */ e.jsx(me, {}),
   /* @__PURE__ */ e.jsx(he, {}),
+  /* @__PURE__ */ e.jsx(fe, {}),
   /* @__PURE__ */ e.jsx(pe, { imageSrc: r[0].imageSrc })
-] }), d = ({
-  label: r,
-  size: t,
-  weigth: n,
-  color: l
-}) => /* @__PURE__ */ e.jsx("div", { className: "m-0 p-0", children: /* @__PURE__ */ e.jsx(
+] }), o = ({ label: r, size: t, weigth: i, color: s }) => /* @__PURE__ */ e.jsx("div", { className: "m-0 p-0", children: /* @__PURE__ */ e.jsx(
   "span",
   {
     style: {
       fontSize: t,
       fontFamily: "quicksand, sans-serif",
-      fontWeight: n,
-      color: l || "#fff"
+      fontWeight: i,
+      color: s || "#fff"
     },
     className: "m-0 p-0 select-none text-white ",
     children: r
@@ -384,54 +379,54 @@ const ue = () => /* @__PURE__ */ e.jsx(
     )
   }
 ), ge = ({ navItems: r }) => {
-  const [t, n] = R("Movies");
+  const [t, i] = R("Movies");
   return /* @__PURE__ */ e.jsx(
     "nav",
     {
       className: `bg-[#17171B] w-min flex relative gap-2\r
 		 lg:gap-15 pt-9.5 px-6 cursor-pointer lg:ml-[226px]`,
-      children: r.map((l) => /* @__PURE__ */ e.jsxs(
+      children: r.map((s) => /* @__PURE__ */ e.jsxs(
         "div",
         {
           className: "relative bg-red flex flex-col items-center",
-          onClick: () => n(l.title),
+          onClick: () => i(s.title),
           children: [
             /* @__PURE__ */ e.jsx("a", { className: " whitespace-nowrap", children: /* @__PURE__ */ e.jsx(
-              d,
+              o,
               {
-                label: l.title,
+                label: s.title,
                 size: "12px",
-                weigth: l.title === t ? "bold" : "normal",
-                color: l.title !== t ? "#606265" : void 0
+                weigth: s.title === t ? "bold" : "normal",
+                color: s.title !== t ? "#606265" : void 0
               }
             ) }),
-            l.title === t && /* @__PURE__ */ e.jsx("div", { className: "absolute -bottom-7 sm:-bottom-2 sm:pb-1 xl:-bottom-5  transition-all duration-100 ease-in-out", children: /* @__PURE__ */ e.jsx(we, {}) })
+            s.title === t && /* @__PURE__ */ e.jsx("div", { className: "absolute -bottom-7 sm:-bottom-2 sm:pb-1 xl:-bottom-5  transition-all duration-100 ease-in-out", children: /* @__PURE__ */ e.jsx(we, {}) })
           ]
         },
-        l.title
+        s.title
       ))
     }
   );
-}, Be = ({ navItems: r, userData: t }) => /* @__PURE__ */ e.jsxs("header", { className: "  header-gradient-border bg-[#17171B] lg:pl-[40px] flex flex-col-reverse md:flex-row justify-between min-h-22 p-1 xl:p-4 ", children: [
+}, Ie = ({ navItems: r, userData: t }) => /* @__PURE__ */ e.jsxs("header", { className: "  header-gradient-border bg-[#17171B] lg:pl-[40px] flex flex-col-reverse md:flex-row justify-between min-h-22 p-1 xl:p-4 ", children: [
   /* @__PURE__ */ e.jsx("div", { className: "w-full md:w-auto mb-6 md:mb-0 flex justify-center md:justify-start", children: /* @__PURE__ */ e.jsx(ge, { navItems: r }) }),
   /* @__PURE__ */ e.jsx("div", { className: "w-full md:w-auto flex justify-center md:justify-end", children: /* @__PURE__ */ e.jsx(je, { userData: t }) })
 ] }), ve = ({
   imageSrc: r,
   title: t,
-  description: n,
-  onHoverChange: l,
+  description: i,
+  onHoverChange: s,
   genre: a
 }) => {
-  const [c, x] = R(!1), h = () => {
-    x(!0), l == null || l(!0);
+  const [c, d] = R(!1), f = () => {
+    d(!0), s == null || s(!0);
   }, b = () => {
-    x(!1), l == null || l(!1);
+    d(!1), s == null || s(!1);
   };
   return /* @__PURE__ */ e.jsxs(
     "div",
     {
       className: "w-full h-full overflow-hidden rounded-[20px] shadow-lg",
-      onMouseEnter: h,
+      onMouseEnter: f,
       onMouseLeave: b,
       children: [
         /* @__PURE__ */ e.jsx(
@@ -442,26 +437,26 @@ const ue = () => /* @__PURE__ */ e.jsx(
             alt: "Preview"
           }
         ),
-        c && n && /* @__PURE__ */ e.jsx("div", { className: "absolute top-0 left-0 w-full h-full bg-black/60 backdrop-blur-sm transition-opacity duration-300 ease-in-out", children: /* @__PURE__ */ e.jsxs("div", { className: "py-5.5 px-6.5", children: [
-          /* @__PURE__ */ e.jsx(d, { size: "14px", weigth: "bold", label: t ?? "" }),
-          /* @__PURE__ */ e.jsx(d, { size: "10px", weigth: "normal", label: a ?? "" }),
+        c && i && /* @__PURE__ */ e.jsx("div", { className: "absolute top-0 left-0 w-full h-full bg-black/60 backdrop-blur-sm transition-opacity duration-300 ease-in-out", children: /* @__PURE__ */ e.jsxs("div", { className: "py-5.5 px-6.5", children: [
+          /* @__PURE__ */ e.jsx(o, { size: "14px", weigth: "bold", label: t ?? "" }),
+          /* @__PURE__ */ e.jsx(o, { size: "10px", weigth: "normal", label: a ?? "" }),
           /* @__PURE__ */ e.jsx("div", { className: "overflow-hidden text-ellipsis line-clamp-2 max-h-full", children: /* @__PURE__ */ e.jsx(
-            d,
+            o,
             {
               size: "12px",
               weigth: "normal",
-              label: n ?? ""
+              label: i ?? ""
             }
           ) })
         ] }) })
       ]
     }
   );
-}, B = () => /* @__PURE__ */ e.jsx("div", { className: "w-auto h-auto flex justify-center items-center rounded-full bg-[#C4C4C4]", children: /* @__PURE__ */ e.jsx("div", { className: "w-full p-1 h-full", children: /* @__PURE__ */ e.jsx(
+}, L = () => /* @__PURE__ */ e.jsx("div", { className: "w-auto h-auto flex justify-center items-center rounded-full bg-[#C4C4C4]", children: /* @__PURE__ */ e.jsx("div", { className: "w-full p-1 h-full", children: /* @__PURE__ */ e.jsx(
   "svg",
   {
-    width: "auto",
-    height: "auto",
+    width: "100%",
+    height: "100%",
     viewBox: "0 0 12 12",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
@@ -473,7 +468,7 @@ const ue = () => /* @__PURE__ */ e.jsx(
       }
     )
   }
-) }) }), F = ({ label: r, color: t }) => /* @__PURE__ */ e.jsx("div", { className: "rounded-sm", children: /* @__PURE__ */ e.jsx(
+) }) }), _ = ({ label: r, color: t }) => /* @__PURE__ */ e.jsx("div", { className: "rounded-sm", children: /* @__PURE__ */ e.jsx(
   "p",
   {
     style: { backgroundColor: t },
@@ -483,8 +478,8 @@ const ue = () => /* @__PURE__ */ e.jsx(
 ) }), be = () => /* @__PURE__ */ e.jsx(
   "svg",
   {
-    width: "auto",
-    height: "auto",
+    width: "100%",
+    height: "100%",
     viewBox: "0 0 11 11",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
@@ -498,12 +493,12 @@ const ue = () => /* @__PURE__ */ e.jsx(
   }
 ), Ne = ({ rate: r }) => /* @__PURE__ */ e.jsxs("div", { className: "flex items-center w-full h-full ", children: [
   /* @__PURE__ */ e.jsx("div", { className: "w-2.5 mt-2 mb-5  mx-0.5", children: /* @__PURE__ */ e.jsx(be, {}) }),
-  /* @__PURE__ */ e.jsx("div", { className: "mb-5 ", children: /* @__PURE__ */ e.jsx(d, { size: "10px", weigth: "normal", label: r }) })
+  /* @__PURE__ */ e.jsx("div", { className: "mb-5 ", children: /* @__PURE__ */ e.jsx(o, { size: "10px", weigth: "normal", label: r }) })
 ] }), Ce = ({
   title: r,
   secondaryTitle: t,
-  link: n,
-  thirdTitle: l,
+  link: i,
+  thirdTitle: s,
   duration: a,
   stars: c
 }) => /* @__PURE__ */ e.jsxs(
@@ -524,25 +519,25 @@ const ue = () => /* @__PURE__ */ e.jsx(
       ),
       /* @__PURE__ */ e.jsxs("div", { className: "flex  justify-between px-4.5 items-center  relative z-10", children: [
         /* @__PURE__ */ e.jsxs("div", { className: "flex pt-3", children: [
-          /* @__PURE__ */ e.jsx("div", { className: " w-7 h-12 flex flex-col justify-start mx-2", children: /* @__PURE__ */ e.jsx(B, {}) }),
+          /* @__PURE__ */ e.jsx("div", { className: " w-7 h-12 flex flex-col justify-start mx-2", children: /* @__PURE__ */ e.jsx(L, {}) }),
           /* @__PURE__ */ e.jsxs("div", { className: "flex -mt-1 ml-1 flex-col leading-[13px]", children: [
-            /* @__PURE__ */ e.jsx("div", { title: r, children: /* @__PURE__ */ e.jsx(d, { size: "11px", weigth: "bold", label: r }) }),
-            /* @__PURE__ */ e.jsx(d, { size: "10px", weigth: "thin", label: t }),
-            l && /* @__PURE__ */ e.jsx(d, { size: "10px", weigth: "thin", label: l })
+            /* @__PURE__ */ e.jsx("div", { title: r, children: /* @__PURE__ */ e.jsx(o, { size: "11px", weigth: "bold", label: r }) }),
+            /* @__PURE__ */ e.jsx(o, { size: "10px", weigth: "thin", label: t }),
+            s && /* @__PURE__ */ e.jsx(o, { size: "10px", weigth: "thin", label: s })
           ] })
         ] }),
         /* @__PURE__ */ e.jsxs("div", { className: "flex ", children: [
           /* @__PURE__ */ e.jsx("div", { className: "w-1 h-8 mr-4 bg-gradient-to-b from-white/20 backdrop-blur-xl via-white/50 to-white/20" }),
-          /* @__PURE__ */ e.jsx("div", { className: "mr-2", children: c ? /* @__PURE__ */ e.jsx(Ne, { rate: c }) : /* @__PURE__ */ e.jsx(F, { label: a, color: "#FFFFFF" }) })
+          /* @__PURE__ */ e.jsx("div", { className: "mr-2", children: c ? /* @__PURE__ */ e.jsx(Ne, { rate: c }) : /* @__PURE__ */ e.jsx(_, { label: a, color: "#FFFFFF" }) })
         ] })
       ] })
     ]
   }
-), ke = () => /* @__PURE__ */ e.jsx("div", { className: "w-full h-full", children: /* @__PURE__ */ e.jsxs(
+), Ee = () => /* @__PURE__ */ e.jsx("div", { className: "w-full h-full", children: /* @__PURE__ */ e.jsxs(
   "svg",
   {
-    width: "auto",
-    height: "auto",
+    width: "100%",
+    height: "100%",
     viewBox: "0 0 10 11",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
@@ -567,68 +562,68 @@ const ue = () => /* @__PURE__ */ e.jsx(
       )
     ]
   }
-) }), Ee = ({ viewers: r }) => /* @__PURE__ */ e.jsxs("div", { className: "flex items-center w-full h-full ", children: [
-  /* @__PURE__ */ e.jsx("div", { className: "w-2.5 mt-1 mx-2", children: /* @__PURE__ */ e.jsx(ke, {}) }),
-  /* @__PURE__ */ e.jsx("div", { children: /* @__PURE__ */ e.jsx(d, { size: "10px", weigth: "normal", label: r }) })
-] }), ye = () => /* @__PURE__ */ e.jsx("div", { className: " w-full h-full  ", children: /* @__PURE__ */ e.jsx(F, { label: "#1 Trending 🔥", color: "#FFFFFF" }) }), Te = ({ currentViewers: r }) => /* @__PURE__ */ e.jsxs("div", { className: "w-full flex items-center h-full", children: [
-  /* @__PURE__ */ e.jsx("div", { children: /* @__PURE__ */ e.jsx(I, { children: /* @__PURE__ */ e.jsx("img", { src: r[0].imageSrc }) }) }, r[0].id),
-  /* @__PURE__ */ e.jsx("div", { className: "-ml-3 mr-3", children: /* @__PURE__ */ e.jsx(I, { children: /* @__PURE__ */ e.jsx("img", { src: r[1].imageSrc }) }) }, r[1].id),
+) }), ye = ({ viewers: r }) => /* @__PURE__ */ e.jsxs("div", { className: "flex items-center w-full h-full ", children: [
+  /* @__PURE__ */ e.jsx("div", { className: "w-2.5 mt-1 mx-2", children: /* @__PURE__ */ e.jsx(Ee, {}) }),
+  /* @__PURE__ */ e.jsx("div", { children: /* @__PURE__ */ e.jsx(o, { size: "10px", weigth: "normal", label: r }) })
+] }), ke = () => /* @__PURE__ */ e.jsx("div", { className: " w-full h-full  ", children: /* @__PURE__ */ e.jsx(_, { label: "#1 Trending 🔥", color: "#FFFFFF" }) }), Te = ({ currentViewers: r }) => /* @__PURE__ */ e.jsxs("div", { className: "w-full flex items-center h-full", children: [
+  /* @__PURE__ */ e.jsx("div", { children: /* @__PURE__ */ e.jsx(D, { children: /* @__PURE__ */ e.jsx("img", { src: r[0].imageSrc }) }) }, r[0].id),
+  /* @__PURE__ */ e.jsx("div", { className: "-ml-3 mr-3", children: /* @__PURE__ */ e.jsx(D, { children: /* @__PURE__ */ e.jsx("img", { src: r[1].imageSrc }) }) }, r[1].id),
   /* @__PURE__ */ e.jsx("div", { className: "-mt-1", children: /* @__PURE__ */ e.jsx(
-    d,
+    o,
     {
       size: "10px",
       weigth: "normal",
       label: `${r.length}+ friends are watching`
     }
   ) })
-] }), Re = ({ label: r, size: t, weight: n }) => /* @__PURE__ */ e.jsx("button", { className: "appearance-none", children: /* @__PURE__ */ e.jsx(d, { size: "10px", label: r, weigth: "normal" }) }), Se = () => /* @__PURE__ */ e.jsxs("div", { className: "flex flex-row items-center justify-center w-25 h-8 rounded-[5px] bg-[#F36F45] cursor-pointer", children: [
-  /* @__PURE__ */ e.jsx("div", { className: " opacity-75 w-5 mx-2 -ml-2 ", children: /* @__PURE__ */ e.jsx(B, {}) }),
+] }), Re = ({ label: r, size: t, weight: i }) => /* @__PURE__ */ e.jsx("button", { className: "appearance-none", children: /* @__PURE__ */ e.jsx(o, { size: "10px", label: r, weigth: "normal" }) }), Se = () => /* @__PURE__ */ e.jsxs("div", { className: "flex flex-row items-center justify-center w-25 h-8 rounded-[5px] bg-[#F36F45] cursor-pointer", children: [
+  /* @__PURE__ */ e.jsx("div", { className: " opacity-75 w-5 mx-2 -ml-2 ", children: /* @__PURE__ */ e.jsx(L, {}) }),
   /* @__PURE__ */ e.jsx("div", { className: "h-full flex items-center", children: /* @__PURE__ */ e.jsx("div", { className: "-mt-1", children: /* @__PURE__ */ e.jsx(Re, { label: "Watch Now", size: "10px", weight: "normal" }) }) })
-] }), _ = ({
+] }), F = ({
   id: r,
   title: t,
-  secondaryTitle: n,
-  link: l,
+  secondaryTitle: i,
+  link: s,
   thirdTitle: a,
   duration: c,
-  imageSrc: x,
-  views: h,
+  imageSrc: d,
+  views: f,
   stars: b,
   currentViewers: w,
   trend: N,
   description: C,
   genre: g
 }) => {
-  const [k, A] = R(!1);
+  const [E, A] = R(!1);
   return /* @__PURE__ */ e.jsxs("div", { className: "w-full h-full relative rounded-[20px] overflow-hidden", children: [
     /* @__PURE__ */ e.jsxs("div", { className: "relative", children: [
       (w == null ? void 0 : w.length) && !N && /* @__PURE__ */ e.jsx("div", { className: "absolute top-2 left-0 mx-2", children: /* @__PURE__ */ e.jsx(Te, { currentViewers: w }) }),
       t === "" && /* @__PURE__ */ e.jsx("div", { className: "absolute cursor-pointer -bottom-22 lg:-bottom-20.5  w-full h-full left-0 ml-6", children: /* @__PURE__ */ e.jsx(Se, {}) }),
-      N && /* @__PURE__ */ e.jsx("div", { className: "absolute top-2 lg:-bottom-24 left-0 ml-2", children: /* @__PURE__ */ e.jsx(ye, {}) }),
-      h && /* @__PURE__ */ e.jsx("div", { className: "absolute top-0 right-0 mx-2", children: /* @__PURE__ */ e.jsx(Ee, { viewers: h }) }),
+      N && /* @__PURE__ */ e.jsx("div", { className: "absolute top-2 lg:-bottom-24 left-0 ml-2", children: /* @__PURE__ */ e.jsx(ke, {}) }),
+      f && /* @__PURE__ */ e.jsx("div", { className: "absolute top-0 right-0 mx-2", children: /* @__PURE__ */ e.jsx(ye, { viewers: f }) }),
       /* @__PURE__ */ e.jsx(
         ve,
         {
-          imageSrc: x,
+          imageSrc: d,
           title: t,
           description: C,
           genre: g,
-          onHoverChange: (E) => {
-            C && A(E);
+          onHoverChange: (y) => {
+            C && A(y);
           }
         }
       )
     ] }),
-    /* @__PURE__ */ e.jsx("div", { className: "absolute left-0 bottom-0 w-full", children: t && !k && /* @__PURE__ */ e.jsx(
+    /* @__PURE__ */ e.jsx("div", { className: "absolute left-0 bottom-0 w-full", children: t && !E && /* @__PURE__ */ e.jsx(
       "div",
       {
-        className: `absolute left-0 bottom-0 w-full transition-opacity duration-300 ${k ? "opacity-0 pointer-events-none" : "opacity-100"}`,
+        className: `absolute left-0 bottom-0 w-full transition-opacity duration-300 ${E ? "opacity-0 pointer-events-none" : "opacity-100"}`,
         children: /* @__PURE__ */ e.jsx(
           Ce,
           {
             title: t,
-            secondaryTitle: n,
-            link: l,
+            secondaryTitle: i,
+            link: s,
             thirdTitle: a,
             duration: c,
             stars: b
@@ -637,20 +632,16 @@ const ue = () => /* @__PURE__ */ e.jsx(
       }
     ) })
   ] });
-}, j = () => /* @__PURE__ */ e.jsx("div", { className: "w-full h-full bg-gray-500 animate-pulse rounded-[20px]" }), _e = () => /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+}, j = () => /* @__PURE__ */ e.jsx("div", { className: "w-full h-full bg-gray-500 animate-pulse rounded-[20px]" }), Fe = () => /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
   /* @__PURE__ */ e.jsx("div", { className: "w-full lg:w-[258px] lg:h-[139px]", children: /* @__PURE__ */ e.jsx(j, {}) }),
   /* @__PURE__ */ e.jsx("div", { className: "w-full lg:w-[258px] lg:h-[139px]", children: /* @__PURE__ */ e.jsx(j, {}) }),
   /* @__PURE__ */ e.jsx("div", { className: "w-full lg:w-[258px] lg:h-[139px]", children: /* @__PURE__ */ e.jsx(j, {}) })
-] }), Fe = () => /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+] }), _e = () => /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
   /* @__PURE__ */ e.jsx("div", { className: "-full lg:w-[402px] lg:h-[170px]", children: /* @__PURE__ */ e.jsx(j, {}) }),
   /* @__PURE__ */ e.jsx("div", { className: "-full lg:w-[402px] lg:h-[170px]", children: /* @__PURE__ */ e.jsx(j, {}) })
-] }), Ye = ({
-  bannerPromo: r,
-  continueWatching: t,
-  popular: n
-}) => /* @__PURE__ */ e.jsxs("main", { className: "bg-[#17171B] px-4 sm:pl-9 sm:pr-7 lg:max-w-min pb-4.5 xs:p-10 lg:pt-8.5 2xl:pl-24 max-w-full", children: [
+] }), Ye = ({ bannerPromo: r, continueWatching: t, popular: i }) => /* @__PURE__ */ e.jsxs("main", { className: "bg-[#17171B] px-4 sm:pl-9 sm:pr-7 lg:max-w-min pb-4.5 xs:p-10 lg:pt-8.5 2xl:pl-24 max-w-full", children: [
   /* @__PURE__ */ e.jsx("section", { className: "lg:block lg:h-[134px] lg:w-[834px] relative", children: r ? /* @__PURE__ */ e.jsx(
-    _,
+    F,
     {
       id: r.id,
       title: "",
@@ -668,9 +659,9 @@ const ue = () => /* @__PURE__ */ e.jsx(
   /* @__PURE__ */ e.jsxs("section", { children: [
     /* @__PURE__ */ e.jsxs("div", { className: "pt-9.5 pb-5.5 flex justify-between w-full flex-wrap", children: [
       /* @__PURE__ */ e.jsxs("div", { className: "flex flex-wrap items-center gap-2 sm:gap-5", children: [
-        /* @__PURE__ */ e.jsx(d, { label: "Continue watching", size: "18px", weigth: "bold" }),
+        /* @__PURE__ */ e.jsx(o, { label: "Continue watching", size: "18px", weigth: "bold" }),
         /* @__PURE__ */ e.jsx(
-          d,
+          o,
           {
             label: "|",
             size: "12px",
@@ -679,7 +670,7 @@ const ue = () => /* @__PURE__ */ e.jsx(
           }
         ),
         /* @__PURE__ */ e.jsx(
-          d,
+          o,
           {
             label: `${t.length} Movies`,
             size: "12px",
@@ -689,7 +680,7 @@ const ue = () => /* @__PURE__ */ e.jsx(
         )
       ] }),
       /* @__PURE__ */ e.jsx("div", { className: "cursor-pointer", children: /* @__PURE__ */ e.jsx(
-        d,
+        o,
         {
           label: "All Movies >",
           size: "12px",
@@ -698,33 +689,33 @@ const ue = () => /* @__PURE__ */ e.jsx(
         }
       ) })
     ] }),
-    /* @__PURE__ */ e.jsx("div", { className: "flex flex-col gap-6  w-full sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:gap-8", children: t.length === 0 ? /* @__PURE__ */ e.jsx(Fe, {}) : t.map((l) => /* @__PURE__ */ e.jsx(
+    /* @__PURE__ */ e.jsx("div", { className: "flex flex-col gap-6  w-full sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:gap-8", children: t.length === 0 ? /* @__PURE__ */ e.jsx(_e, {}) : t.map((s) => /* @__PURE__ */ e.jsx(
       "article",
       {
         className: "w-full lg:w-[402px] lg:h-[170px]",
         children: /* @__PURE__ */ e.jsx(
-          _,
+          F,
           {
-            id: l.id,
-            title: l.title,
-            secondaryTitle: l.secondaryTitle,
-            link: l.link,
-            duration: l.duration,
-            imageSrc: l.imageSrc,
-            genre: l.genre,
-            description: l.description,
+            id: s.id,
+            title: s.title,
+            secondaryTitle: s.secondaryTitle,
+            link: s.link,
+            duration: s.duration,
+            imageSrc: s.imageSrc,
+            genre: s.genre,
+            description: s.description,
             currentViewers: r.currentViewers,
-            trend: l.trend
+            trend: s.trend
           }
         )
       },
-      l.id
+      s.id
     )) })
   ] }),
   /* @__PURE__ */ e.jsxs("section", { className: "pt-9.5", children: [
     /* @__PURE__ */ e.jsxs("div", { className: " flex justify-between w-full flex-wrap  pb-4.5", children: [
       /* @__PURE__ */ e.jsx("div", { className: "flex lg:flex-wrap items-center gap-2 sm:gap-4", children: /* @__PURE__ */ e.jsx(
-        d,
+        o,
         {
           label: "Popular movies 2021",
           size: "18px",
@@ -732,7 +723,7 @@ const ue = () => /* @__PURE__ */ e.jsx(
         }
       ) }),
       /* @__PURE__ */ e.jsx("div", { className: "cursor-pointer", children: /* @__PURE__ */ e.jsx(
-        d,
+        o,
         {
           label: "All Movies >",
           size: "12px",
@@ -741,40 +732,40 @@ const ue = () => /* @__PURE__ */ e.jsx(
         }
       ) })
     ] }),
-    /* @__PURE__ */ e.jsx("div", { className: "flex flex-col gap-6 pb-6  w-full sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:gap-7.5", children: n.length === 0 ? /* @__PURE__ */ e.jsx(_e, {}) : n.map((l) => /* @__PURE__ */ e.jsx(
+    /* @__PURE__ */ e.jsx("div", { className: "flex flex-col gap-6 pb-6  w-full sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:gap-7.5", children: i.length === 0 ? /* @__PURE__ */ e.jsx(Fe, {}) : i.map((s) => /* @__PURE__ */ e.jsx(
       "article",
       {
         className: "w-full lg:w-[258px] lg:h-[139px]",
         children: /* @__PURE__ */ e.jsx(
-          _,
+          F,
           {
-            id: l.id,
-            title: l.title,
-            secondaryTitle: l.secondaryTitle,
-            link: l.link,
-            duration: l.duration,
-            imageSrc: l.imageSrc,
-            stars: l.stars,
-            genre: l.genre,
-            description: l.description
+            id: s.id,
+            title: s.title,
+            secondaryTitle: s.secondaryTitle,
+            link: s.link,
+            duration: s.duration,
+            imageSrc: s.imageSrc,
+            stars: s.stars,
+            genre: s.genre,
+            description: s.description
           }
         )
       },
-      l.id
+      s.id
     )) })
   ] })
 ] }), Ae = ({ category: r }) => {
   const t = ["#F36F45", "#8769FF", "#61D1EA"];
-  let n = null;
-  const l = () => {
-    const a = t.filter((x) => x !== n), c = a[Math.floor(Math.random() * a.length)];
-    return n = c, c;
+  let i = null;
+  const s = () => {
+    const a = t.filter((d) => d !== i), c = a[Math.floor(Math.random() * a.length)];
+    return i = c, c;
   };
   return /* @__PURE__ */ e.jsxs("div", { className: " w-full px-6 lg:px-12.5 ", children: [
-    /* @__PURE__ */ e.jsx("div", { className: "pb-7.5 pt-6", children: /* @__PURE__ */ e.jsx(d, { size: "18px", label: "Favourite Genres", weigth: "bold" }) }),
-    /* @__PURE__ */ e.jsx("div", { className: "flex flex-wrap gap-5 w-58  ", children: r.allCategories.map((a, c) => /* @__PURE__ */ e.jsx("div", { className: "cursor-pointer", children: /* @__PURE__ */ e.jsx(F, { color: l(), label: a }, c) })) })
+    /* @__PURE__ */ e.jsx("div", { className: "pb-7.5 pt-6", children: /* @__PURE__ */ e.jsx(o, { size: "18px", label: "Favourite Genres", weigth: "bold" }) }),
+    /* @__PURE__ */ e.jsx("div", { className: "flex flex-wrap gap-5 w-58  ", children: r.allCategories.map((a, c) => /* @__PURE__ */ e.jsx("div", { className: "cursor-pointer", children: /* @__PURE__ */ e.jsx(_, { color: s(), label: a }, c) })) })
   ] });
-}, Pe = () => /* @__PURE__ */ e.jsx("div", { children: /* @__PURE__ */ e.jsxs(
+}, ze = () => /* @__PURE__ */ e.jsx("div", { children: /* @__PURE__ */ e.jsxs(
   "svg",
   {
     width: "12",
@@ -787,11 +778,11 @@ const ue = () => /* @__PURE__ */ e.jsx(
       /* @__PURE__ */ e.jsx("path", { d: "M6 3V6M6 9V6M6 6H3H9", stroke: "black" })
     ]
   }
-) }), Oe = ({ category: r }) => /* @__PURE__ */ e.jsxs("div", { className: " w-full px-6 lg:px-12.5 lg:pb-6  ", children: [
+) }), Pe = ({ category: r }) => /* @__PURE__ */ e.jsxs("div", { className: " w-full px-6 lg:px-12.5 lg:pb-6  ", children: [
   /* @__PURE__ */ e.jsxs("div", { className: " py-5 gap-2 flex items-center", children: [
-    /* @__PURE__ */ e.jsx("div", { className: "pt-1 h-4", children: /* @__PURE__ */ e.jsx(Pe, {}) }),
+    /* @__PURE__ */ e.jsx("div", { className: "pt-1 h-4", children: /* @__PURE__ */ e.jsx(ze, {}) }),
     /* @__PURE__ */ e.jsx(
-      d,
+      o,
       {
         size: "11px",
         label: "Add your favourite genres",
@@ -799,8 +790,8 @@ const ue = () => /* @__PURE__ */ e.jsx(
       }
     )
   ] }),
-  /* @__PURE__ */ e.jsx("div", { className: "flex flex-wrap gap-5 w-58 pb-4.5 ", children: r.favouriteCategorie.map((t, n) => /* @__PURE__ */ e.jsx("div", { className: "cursor-pointer", children: /* @__PURE__ */ e.jsx(F, { label: t, color: "#FFFFFF" }, n) })) })
-] }), ze = () => /* @__PURE__ */ e.jsxs(
+  /* @__PURE__ */ e.jsx("div", { className: "flex flex-wrap gap-5 w-58 pb-4.5 ", children: r.favouriteCategorie.map((t, i) => /* @__PURE__ */ e.jsx("div", { className: "cursor-pointer", children: /* @__PURE__ */ e.jsx(_, { label: t, color: "#FFFFFF" }, i) })) })
+] }), Me = () => /* @__PURE__ */ e.jsxs(
   "svg",
   {
     width: "12",
@@ -825,91 +816,295 @@ const ue = () => /* @__PURE__ */ e.jsx(
       )
     ]
   }
-), Me = ({ category: r }) => {
-  const [t, n] = R(!1), [l, a] = R("Today"), c = (x) => {
-    a(x), n(!1);
+), Oe = ({ category: r }) => {
+  const [t, i] = R(!1), [s, a] = R("Today"), c = (d) => {
+    a(d), i(!1);
   };
   return /* @__PURE__ */ e.jsxs(
     "div",
     {
       className: "flex w-full h-full items-center  relative cursor-pointer",
-      onClick: () => n((x) => !x),
+      onClick: () => i((d) => !d),
       children: [
-        /* @__PURE__ */ e.jsx(d, { label: "Sort by", weigth: "normal", size: "12px" }),
+        /* @__PURE__ */ e.jsx(o, { label: "Sort by", weigth: "normal", size: "12px" }),
         /* @__PURE__ */ e.jsxs("div", { className: "ml-3.5 mr-1  relative", children: [
           /* @__PURE__ */ e.jsx(
-            d,
+            o,
             {
-              label: l,
+              label: s,
               weigth: "normal",
               size: "12px",
               color: "#606265"
             }
           ),
-          t && /* @__PURE__ */ e.jsx("div", { className: "absolute left-0 mt-1 bg-white border rounded shadow z-10 min-w-full", children: r.allCategories.map((x) => /* @__PURE__ */ e.jsx(
+          t && /* @__PURE__ */ e.jsx("div", { className: "absolute left-0 mt-1 bg-white border rounded shadow z-10 min-w-full", children: r.allCategories.map((d) => /* @__PURE__ */ e.jsx(
             "div",
             {
               className: "px-4 py-2 hover:bg-gray-100 ",
-              onClick: () => c(x),
-              children: x
+              onClick: () => c(d),
+              children: d
             },
-            x
+            d
           )) })
         ] }),
-        /* @__PURE__ */ e.jsx("div", { className: "pt-1", children: /* @__PURE__ */ e.jsx(ze, {}) })
+        /* @__PURE__ */ e.jsx("div", { className: "pt-1", children: /* @__PURE__ */ e.jsx(Me, {}) })
       ]
     }
   );
-}, Le = () => /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+}, Be = () => /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
   /* @__PURE__ */ e.jsx("div", { className: "-full lg:w-[402px] lg:h-[170px]", children: /* @__PURE__ */ e.jsx(j, {}) }),
   /* @__PURE__ */ e.jsx("div", { className: "-full lg:w-[402px] lg:h-[170px]", children: /* @__PURE__ */ e.jsx(j, {}) })
-] }), $e = ({
-  videos: r,
-  category: t,
-  onCloseSideBar: n
-}) => /* @__PURE__ */ e.jsxs("aside", { className: "bg-[#17171B] relative w-full lg:w-[450px] pt-8.5  items-center xs:min-h-screen flex flex-col 2xl:h-screen m-0 p-0 border-r border-[#323232]", children: [
+] }), $e = ({ videos: r, category: t, onCloseSideBar: i }) => /* @__PURE__ */ e.jsxs("aside", { className: "bg-[#17171B] relative w-full lg:w-[450px] pt-8.5  items-center xs:min-h-screen flex flex-col 2xl:h-screen m-0 p-0 border-r border-[#323232]", children: [
   /* @__PURE__ */ e.jsxs("div", { className: "flex w-full justify-between items-center px-6  lg:px-12.5 sm:px-6 whitespace-nowrap", children: [
-    /* @__PURE__ */ e.jsx(d, { size: "18px", label: "New trailers", weigth: "bold" }),
-    /* @__PURE__ */ e.jsx("div", { className: "flex justify-between items-center w-auto", children: /* @__PURE__ */ e.jsx(Me, { category: t }) })
+    /* @__PURE__ */ e.jsx(o, { size: "18px", label: "New trailers", weigth: "bold" }),
+    /* @__PURE__ */ e.jsx("div", { className: "flex justify-between items-center w-auto", children: /* @__PURE__ */ e.jsx(Oe, { category: t }) })
   ] }),
-  /* @__PURE__ */ e.jsx("div", { className: "flex flex-col pt-5.5 pb-5 sm:px-6.5 gap-5.5 w-full items-center ", children: r.length === 0 ? /* @__PURE__ */ e.jsx(Le, {}) : r.map((l) => /* @__PURE__ */ e.jsx(
+  /* @__PURE__ */ e.jsx("div", { className: "flex flex-col pt-5.5 pb-5 sm:px-6.5 gap-5.5 w-full items-center ", children: r.length === 0 ? /* @__PURE__ */ e.jsx(Be, {}) : r.map((s) => /* @__PURE__ */ e.jsx(
     "div",
     {
       className: "w-full max-h-[150px]  px-6 max-w-sm sm:max-w-md md:max-w-lg rounded-3xl overflow-hidden",
       children: /* @__PURE__ */ e.jsx(
-        _,
+        F,
         {
-          id: l.id,
-          title: l.title,
-          secondaryTitle: l.secondaryTitle,
-          link: l.link,
-          thirdTitle: l.thirdTitle,
-          duration: l.duration,
-          views: l.views,
-          imageSrc: l.imageSrc,
-          genre: l.genre,
-          description: l.description
+          id: s.id,
+          title: s.title,
+          secondaryTitle: s.secondaryTitle,
+          link: s.link,
+          thirdTitle: s.thirdTitle,
+          duration: s.duration,
+          views: s.views,
+          imageSrc: s.imageSrc,
+          genre: s.genre,
+          description: s.description
         }
       )
     },
-    l.id
+    s.id
   )) }),
   /* @__PURE__ */ e.jsxs("div", { className: " bg-[#1E1E21] 2xl:h-screen w-full", children: [
     /* @__PURE__ */ e.jsx(Ae, { category: t }),
-    /* @__PURE__ */ e.jsx(Oe, { category: t })
+    /* @__PURE__ */ e.jsx(Pe, { category: t })
   ] }),
   /* @__PURE__ */ e.jsx(
     "div",
     {
       className: "absolute cursor-pointer top-2 -right-3 xs:top-0 lg:top-1/12  lg:-right-4.5 transform rotate-180 w-7 lg:block",
-      onClick: n,
-      children: /* @__PURE__ */ e.jsx(B, {})
+      onClick: i,
+      children: /* @__PURE__ */ e.jsx(L, {})
     }
   )
+] }), We = ({ label: r }) => /* @__PURE__ */ e.jsx("div", { className: "bg-[#17171B] max-w-min whitespace-nowrap p-3 rounded-[20px] text-white", children: r }), De = () => /* @__PURE__ */ e.jsx("div", { className: "w-full h-full", children: /* @__PURE__ */ e.jsxs(
+  "svg",
+  {
+    height: "100%",
+    width: "100%",
+    viewBox: "0 0 496.2 496.2",
+    xmlns: "http://www.w3.org/2000/svg",
+    "aria-label": "Popcorn",
+    children: [
+      /* @__PURE__ */ e.jsx("circle", { fill: "#334D5C", cx: "248.1", cy: "248.1", r: "248.1" }),
+      /* @__PURE__ */ e.jsx(
+        "path",
+        {
+          fill: "#E2BA13",
+          d: `M188.4,94c-8.9,10.3-8.1,25.6,1.7,34c4,3.4,8.8,5.2,13.7,5.5c1.3,2.9,3.3,5.5,5.8,7.7\r
+						c9.8,8.5,25,7,33.9-3.3c4.2-4.9,6.3-11,6.2-16.9c2.2-1.4,4.3-3.1,6.2-5.2c8.9-10.3,8.1-25.6-1.7-34s-25-7-33.9,3.3\r
+						c-0.8,0.9-1.4,1.8-2.1,2.7C208.6,82.7,196.1,85,188.4,94z`
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "path",
+        {
+          fill: "#EDC92F",
+          d: `M267.1,82.5c-10.8,0.7-19,9.6-18.4,19.9c0.3,4.1,1.9,7.9,4.5,10.8c-0.9,2.4-1.3,4.9-1.2,7.6\r
+						c0.6,10.3,9.9,18.1,20.7,17.4c5.2-0.3,9.7-2.5,13-5.8c2,0.5,4.2,0.7,6.4,0.6c10.8-0.7,19-9.6,18.4-19.9s-9.9-18.1-20.7-17.4\r
+						c-0.9,0.1-1.8,0.2-2.7,0.4C284.7,87.7,276.5,81.9,267.1,82.5z`
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "path",
+        {
+          fill: "#EFD35B",
+          d: `M174.7,145.6c0-10.8-8.4-19.6-18.7-19.6c-4.2,0-8,1.4-11.1,3.8c-2.3-1.1-4.8-1.6-7.5-1.6\r
+						c-10.3,0-18.7,8.8-18.7,19.6c0,5.2,1.9,9.9,5,13.4c-0.6,2-1,4.1-1,6.3c0,10.8,8.4,19.6,18.7,19.6s18.7-8.8,18.7-19.6\r
+						c0-0.9-0.1-1.8-0.2-2.7C168.4,162.8,174.7,155,174.7,145.6z`
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "path",
+        {
+          fill: "#F9E595",
+          d: `M195.7,155.9c10.8-0.6,19.1-9.5,18.5-19.8c-0.2-4.2-1.9-7.9-4.5-10.9c0.9-2.4,1.4-4.9,1.2-7.6\r
+						c-0.6-10.3-9.8-18.1-20.6-17.5c-5.2,0.3-9.7,2.5-13,5.8c-2-0.5-4.2-0.8-6.4-0.6c-10.8,0.6-19.1,9.5-18.5,19.8s9.8,18.1,20.6,17.5\r
+						c0.9-0.1,1.8-0.2,2.7-0.3C178.1,150.5,186.3,156.4,195.7,155.9z`
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "path",
+        {
+          fill: "#EFD35B",
+          d: `M359.7,177.7c10.8-0.6,19.1-9.5,18.5-19.8c-0.2-4.2-1.9-7.9-4.5-10.9c0.9-2.4,1.4-4.9,1.2-7.6\r
+						c-0.6-10.3-9.8-18.1-20.6-17.5c-5.2,0.3-9.7,2.5-13,5.8c-2-0.5-4.2-0.8-6.4-0.6c-10.8,0.6-19.1,9.5-18.5,19.8s9.8,18.1,20.6,17.5\r
+						c0.9-0.1,1.8-0.2,2.7-0.3C342.1,172.4,350.3,178.3,359.7,177.7z`
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "path",
+        {
+          fill: "#EFD35B",
+          d: `M204.2,174.1c10.8-0.6,19.1-9.5,18.5-19.8c-0.2-4.2-1.9-7.9-4.5-10.9c0.9-2.4,1.4-4.9,1.2-7.6\r
+						c-0.6-10.3-9.8-18.1-20.6-17.5c-5.2,0.3-9.7,2.5-13,5.8c-2-0.5-4.2-0.8-6.4-0.6c-10.8,0.6-19.1,9.5-18.5,19.8s9.8,18.1,20.6,17.5\r
+						c0.9-0.1,1.8-0.2,2.7-0.3C186.6,168.8,194.8,174.6,204.2,174.1z`
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "path",
+        {
+          fill: "#EFD35B",
+          d: `M249.1,152.2c10.8-0.6,19.1-9.5,18.5-19.8c-0.2-4.1-1.9-7.9-4.5-10.9c0.9-2.4,1.4-4.9,1.2-7.6\r
+						c-0.6-10.3-9.8-18.1-20.6-17.5c-5.2,0.3-9.7,2.5-13,5.8c-2-0.5-4.2-0.8-6.4-0.6c-10.8,0.6-19.1,9.5-18.5,19.8s9.8,18.1,20.6,17.5\r
+						c0.9-0.1,1.8-0.2,2.7-0.3C231.5,146.9,239.7,152.8,249.1,152.2z`
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "path",
+        {
+          fill: "#EFD35B",
+          d: `M343.9,141.2c6.1-8.9,4.2-20.9-4.2-26.7c-3.4-2.4-7.4-3.4-11.3-3.1c-1.3-2.2-3-4.1-5.2-5.6\r
+						c-8.5-5.9-20.4-3.4-26.5,5.5c-2.9,4.2-4,9.2-3.4,13.8c-1.7,1.3-3.2,2.8-4.4,4.6c-6.1,8.9-4.2,20.9,4.3,26.7\r
+						c8.5,5.9,20.4,3.4,26.5-5.5c0.5-0.8,1-1.5,1.4-2.3C328.9,151.8,338.6,149,343.9,141.2z`
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "path",
+        {
+          fill: "#EFD35B",
+          d: `M258.2,145.6c1.3-10.7-6-20.4-16.2-21.7c-4.1-0.5-8.1,0.5-11.5,2.5c-2.2-1.3-4.6-2.2-7.2-2.5\r
+						c-10.2-1.2-19.6,6.5-20.9,17.2c-0.6,5.1,0.7,10,3.4,13.9c-0.9,1.9-1.5,4-1.8,6.2c-1.3,10.7,6,20.4,16.2,21.7\r
+						c10.2,1.2,19.6-6.5,20.9-17.2c0.1-0.9,0.2-1.8,0.1-2.7C249.8,162,257.1,155,258.2,145.6z`
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "path",
+        {
+          fill: "#F9E595",
+          d: `M231.1,161.3c-1.3,12.2,7.1,23,18.7,24.3c4.7,0.5,9.2-0.6,12.9-3c2.5,1.5,5.2,2.4,8.2,2.8\r
+						c11.6,1.2,22-7.6,23.3-19.8c0.6-5.8-1-11.3-4-15.6c1-2.2,1.6-4.5,1.9-7c1.3-12.2-7.1-23-18.6-24.3c-11.6-1.2-22,7.6-23.3,19.8\r
+						c-0.1,1-0.1,2.1-0.1,3.1C240.3,142.6,232.2,150.7,231.1,161.3z`
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "path",
+        {
+          fill: "#EFD35B",
+          d: `M330.2,161.7c6.3-8.8,4.5-20.8-3.9-26.8c-3.4-2.4-7.3-3.5-11.3-3.3c-1.3-2.2-3-4.1-5.2-5.7\r
+						c-8.4-6-20.3-3.6-26.6,5.2c-3,4.2-4.1,9.1-3.6,13.8c-1.7,1.2-3.2,2.8-4.5,4.6c-6.2,8.8-4.5,20.8,3.9,26.8s20.3,3.6,26.6-5.2\r
+						c0.5-0.8,1-1.5,1.4-2.3C315,172.1,324.7,169.3,330.2,161.7z`
+        }
+      ),
+      /* @__PURE__ */ e.jsxs("g", { children: [
+        /* @__PURE__ */ e.jsx(
+          "path",
+          {
+            fill: "#E5DDD7",
+            d: `M383.2,143.9c-0.7-0.7-1.7-1-2.7-0.8l-15.2-6.7l-16.9,13.5l-19.1-5.9l-14.8,13.1l-17.2-6.3\r
+							L281.9,164l-16-6.5l-17.8,13.7l-19.3-14l-14.4,6.9l-18-13.8l-15.3,6.7l-16.8-13.5L148,150l-16.1-13.4l-16.1,6.5\r
+							c-1-0.2-2,0.1-2.7,0.8s-1,1.7-0.9,2.7l40.6,243.7c0.2,1.1,1,2,2.1,2.4l92.4,28.2c0,0,0,0,0.1,0l0,0h0.1c0.1,0,0.2,0.1,0.3,0.1\r
+							s0.2,0,0.3,0h0.1l0,0l0,0h0.1c0.1,0,0.2,0,0.3,0c0.1,0,0.2,0,0.3-0.1h0.1l0,0c0,0,0,0,0.1,0l92.4-28.2c1.1-0.3,1.9-1.3,2.1-2.4\r
+							l40.5-243.8C384.2,145.6,383.9,144.6,383.2,143.9z`
+          }
+        ),
+        /* @__PURE__ */ e.jsx("polygon", { fill: "#E5DDD7", points: "248.1,418 248.1,418 248.1,418" }),
+        /* @__PURE__ */ e.jsx("polygon", { fill: "#E5DDD7", points: "248.1,418 248.1,418 248.1,418" }),
+        /* @__PURE__ */ e.jsx(
+          "polygon",
+          {
+            fill: "#E5DDD7",
+            points: "248.1,174.3 248.1,174.3 248.1,418 248.1,418 248.1,418"
+          }
+        )
+      ] }),
+      /* @__PURE__ */ e.jsxs("g", { children: [
+        /* @__PURE__ */ e.jsx(
+          "polygon",
+          {
+            fill: "#EA4949",
+            points: "122.5,147.6 160.8,391.3 175.5,395.8 143.6,152.1 132.8,141.4"
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          "polygon",
+          {
+            fill: "#EA4949",
+            points: "154.8,154.5 183.3,398.2 197.9,402.6 175.9,159 165.9,148.4"
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          "polygon",
+          {
+            fill: "#EA4949",
+            points: "187.1,161.3 205.7,405 220.4,409.5 208.2,165.8 196.3,154.9"
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          "polygon",
+          {
+            fill: "#EA4949",
+            points: "219.4,168.2 228.2,411.9 242.8,416.3 240.5,172.7 229.3,161.9"
+          }
+        )
+      ] }),
+      /* @__PURE__ */ e.jsxs("g", { children: [
+        /* @__PURE__ */ e.jsx(
+          "polygon",
+          {
+            fill: "#BF1717",
+            points: "256.7,172.5 254.1,416.1 268.8,411.6 277.8,168 265.9,162.1"
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          "polygon",
+          {
+            fill: "#BF1717",
+            points: "289,165.6 276.5,409.3 291.2,404.8 310.1,161.1 298.5,155.2"
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          "polygon",
+          {
+            fill: "#BF1717",
+            points: "321.3,158.7 299,402.4 313.7,397.9 342.4,154.3 330.9,148.3"
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          "polygon",
+          {
+            fill: "#BF1717",
+            points: "353.6,151.9 321.4,395.6 336.1,391.1 374.7,147.4 362.8,141.5"
+          }
+        )
+      ] })
+    ]
+  }
+) }), Ue = () => /* @__PURE__ */ e.jsxs("div", { className: "h-screen bg-[#17171B] flex justify-center flex-col items-center w-full", children: [
+  /* @__PURE__ */ e.jsx("div", { className: "w-54 h-54", children: /* @__PURE__ */ e.jsx(De, {}) }),
+  /* @__PURE__ */ e.jsxs("div", { className: "text-center mt-4", children: [
+    /* @__PURE__ */ e.jsx(o, { size: "18px", weigth: "bold", label: "OOPS!" }),
+    /* @__PURE__ */ e.jsx(
+      o,
+      {
+        size: "18px",
+        weigth: "bold",
+        label: "The page you are looking for doesn't exists."
+      }
+    )
+  ] })
 ] });
 export {
-  Be as Header,
+  Ie as Header,
   Ye as Main,
-  B as PlayItem,
-  $e as SideBar
+  Ue as NotFound,
+  L as PlayItem,
+  $e as SideBar,
+  We as Toast
 };

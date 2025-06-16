@@ -1,3 +1,2 @@
-import React from "react";
-declare const NotificationItem: React.FC;
+declare const NotificationItem: () => import("react/jsx-runtime").JSX.Element;
 export default NotificationItem;

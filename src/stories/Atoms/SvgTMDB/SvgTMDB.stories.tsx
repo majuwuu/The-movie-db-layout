@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import SvgTMDB from "./index";
 
 const meta: Meta<typeof SvgTMDB> = {
-	title: "Logos/SvgTMDB",
+	title: "Atoms/SvgTMDB",
 	component: SvgTMDB,
 	tags: ["autodocs"],
 	argTypes: {

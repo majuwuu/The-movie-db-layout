@@ -1,3 +1,2 @@
-import React from "react";
-declare const Caret: React.FC;
+declare const Caret: () => import("react/jsx-runtime").JSX.Element;
 export default Caret;

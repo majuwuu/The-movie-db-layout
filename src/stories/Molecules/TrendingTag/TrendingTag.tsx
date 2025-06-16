@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../../tailwind.css";
 import TagItem from "../../Atoms/TagItem";
 
-const TrendingTag: React.FC = () => {
+const TrendingTag = () => {
 	return (
 		<div className=" w-full h-full  ">
 			<TagItem label={"#1 Trending 🔥"} color="#FFFFFF" />

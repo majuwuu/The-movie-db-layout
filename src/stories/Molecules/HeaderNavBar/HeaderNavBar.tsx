@@ -10,7 +10,7 @@ export interface HeaderNavBarProps {
 	}[];
 }
 
-const HeaderNavBar: React.FC<HeaderNavBarProps> = ({ navItems }) => {
+const HeaderNavBar = ({ navItems }: HeaderNavBarProps) => {
 	const [activeItem, setActiveItem] = useState("Movies");
 
 	return (

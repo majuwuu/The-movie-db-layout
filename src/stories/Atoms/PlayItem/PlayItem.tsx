@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../tailwind.css";
 
-const PlayItem: React.FC = () => {
+const PlayItem = () => {
 	return (
 		<div className="w-auto h-auto flex justify-center items-center rounded-full bg-[#C4C4C4]">
 			<div className="w-full p-1 h-full">

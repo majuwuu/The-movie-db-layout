@@ -1,6 +1,6 @@
 import React from "react";
 
-const Caret: React.FC = () => {
+const Caret = () => {
 	return (
 		<svg
 			width="51"

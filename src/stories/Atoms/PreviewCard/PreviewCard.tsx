@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import PrimaryText from "../PrimaryText";
 import { PreviewCardProps } from "../../../types/atoms";
 
-const PreviewCard: React.FC<PreviewCardProps> = ({
+const PreviewCard = ({
 	imageSrc,
 	title,
 	description,
 	onHoverChange,
 	genre,
-}) => {
+}: PreviewCardProps) => {
 	const [isHovered, setIsHovered] = useState(false);
 
 	const handleMouseEnter = () => {

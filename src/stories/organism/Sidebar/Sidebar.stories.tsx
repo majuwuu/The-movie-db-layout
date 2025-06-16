@@ -12,6 +12,7 @@ export const Default: StoryObj<typeof Sidebar> = {
 	args: {
 		videos: [
 			{
+				id: "1",
 				title: "Lorem ipsum",
 				secondaryTitle: "Test",
 				link: "/",
@@ -24,6 +25,7 @@ export const Default: StoryObj<typeof Sidebar> = {
 					"For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk...",
 			},
 			{
+				id: "2",
 				title: "Lorem ipsum",
 				secondaryTitle: "Test",
 				link: "/",
@@ -37,6 +39,16 @@ export const Default: StoryObj<typeof Sidebar> = {
 			},
 		],
 
+		category: {
+			allCategories: ["Action", "Western", "Adventures", "Drama", "Sci-Fi"],
+			favouriteCategorie: ["Crime", "Comedy", "Thriller"],
+		},
+	},
+};
+
+export const Skeleton: StoryObj<typeof Sidebar> = {
+	args: {
+		videos: [],
 		category: {
 			allCategories: ["Action", "Western", "Adventures", "Drama", "Sci-Fi"],
 			favouriteCategorie: ["Crime", "Comedy", "Thriller"],

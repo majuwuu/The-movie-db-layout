@@ -6,14 +6,14 @@ import TagItem from "../../Atoms/TagItem";
 import Rated from "../Rated";
 import { CardDescriptionProps } from "../../../types/molecules";
 
-const CardDescription: React.FC<CardDescriptionProps> = ({
+const CardDescription = ({
 	title,
 	secondaryTitle,
 	link,
 	thirdTitle,
 	duration,
 	stars,
-}) => {
+}: CardDescriptionProps) => {
 	return (
 		<div
 			className="w-full bg-black/40 minx-h-[60px]

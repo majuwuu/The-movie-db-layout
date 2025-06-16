@@ -2,12 +2,7 @@ import React from "react";
 import "../../../tailwind.css";
 import { PrimaryTextProps } from "../../../types/atoms";
 
-const PrimaryText: React.FC<PrimaryTextProps> = ({
-	label,
-	size,
-	weigth,
-	color,
-}) => {
+const PrimaryText = ({ label, size, weigth, color }: PrimaryTextProps) => {
 	return (
 		<div className="m-0 p-0">
 			<span

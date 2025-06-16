@@ -1,6 +1,6 @@
 import React from "react";
 
-const SearchItem: React.FC = () => {
+const SearchItem = () => {
 	return (
 		<svg
 			width="20"

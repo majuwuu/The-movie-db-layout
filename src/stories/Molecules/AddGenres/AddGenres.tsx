@@ -5,7 +5,7 @@ import TagItem from "../../Atoms/TagItem";
 import PlusIcon from "../../Atoms/PlusIcon";
 import { AddGenresProps } from "../../../types/molecules";
 
-const AddGenres: React.FC<AddGenresProps> = ({ category }) => {
+const AddGenres = ({ category }: AddGenresProps) => {
 	return (
 		<div className=" w-full px-6 lg:px-12.5 lg:pb-6  ">
 			<div className=" py-5 gap-2 flex items-center">

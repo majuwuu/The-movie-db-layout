@@ -1,6 +1,6 @@
 import React from "react";
 
-const StarItem: React.FC = () => {
+const StarItem = () => {
 	return (
 		<svg
 			width="auto"

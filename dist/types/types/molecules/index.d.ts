@@ -44,6 +44,7 @@ export interface SortByProps {
     };
 }
 export interface VideoCardDescriptionProps {
+    id: string;
     title: string;
     secondaryTitle: string;
     link: string;

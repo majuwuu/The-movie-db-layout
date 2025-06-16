@@ -1,7 +1,7 @@
 import React from "react";
 import { ImageBubbleProps } from "../../../types/atoms";
 
-const ImageBubble: React.FC<ImageBubbleProps> = ({ children }) => {
+const ImageBubble = ({ children }: ImageBubbleProps) => {
 	return <div>{children}</div>;
 };
 

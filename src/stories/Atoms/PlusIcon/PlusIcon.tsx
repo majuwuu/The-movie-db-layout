@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../tailwind.css";
 
-const PlusIcon: React.FC = () => {
+const PlusIcon = () => {
 	return (
 		<div>
 			<svg

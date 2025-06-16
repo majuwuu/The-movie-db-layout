@@ -6,7 +6,7 @@ import SettingsItem from "../../Atoms/SettingsItem";
 import ProfileComponent from "../ProfileComponent";
 import { HeaderUtilitiesProps } from "../../../types/molecules";
 
-const HeaderUtilities: React.FC<HeaderUtilitiesProps> = ({ userData }) => {
+const HeaderUtilities = ({ userData }: HeaderUtilitiesProps) => {
 	return (
 		<nav className="bg-[#17171B] w-min flex relative gap-5.5 pt-10.5 px-6 cursor-pointer">
 			<SearchItem />

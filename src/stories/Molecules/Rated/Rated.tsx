@@ -4,7 +4,7 @@ import "../../../tailwind.css";
 import StarItem from "../../Atoms/StarItem";
 import { RatedProps } from "../../../types/molecules";
 
-const Rated: React.FC<RatedProps> = ({ rate }) => {
+const Rated = ({ rate }: RatedProps) => {
 	return (
 		<div className="flex items-center w-full h-full ">
 			<div className="w-2.5 mt-2 mb-5  mx-0.5">

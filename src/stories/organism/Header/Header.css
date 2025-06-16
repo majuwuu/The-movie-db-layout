@@ -1,0 +1,11 @@
+.header-gradient-border {
+	border-bottom: 1px solid transparent;
+	border-image: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0) 0%,
+		#323232 51%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	border-image-slice: 1;
+	background-color: #17171b; /* Tu fondo original */
+}

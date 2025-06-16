@@ -1,6 +1,6 @@
 import React from "react";
 
-const NotificationItem: React.FC = () => {
+const NotificationItem = () => {
 	return (
 		<svg
 			width="19"

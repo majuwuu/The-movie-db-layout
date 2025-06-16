@@ -4,7 +4,7 @@ import "../../../tailwind.css";
 import ViewItem from "../../Atoms/ViewItem";
 import { ViewersProps } from "../../../types/molecules";
 
-const Viewers: React.FC<ViewersProps> = ({ viewers }) => {
+const Viewers = ({ viewers }: ViewersProps) => {
 	return (
 		<div className="flex items-center w-full h-full ">
 			<div className="w-2.5 mt-1 mx-2">

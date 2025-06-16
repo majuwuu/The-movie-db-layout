@@ -1,33 +1,38 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Main from "./index";
-import CurrentViewers from "../../Molecules/CurrentViewers";
 
 const meta: Meta<typeof Main> = {
 	component: Main,
 	title: "Organism/Main",
+	tags: ["autodocs"],
+	parameters: {
+		docs: {
+			description: {
+				component:
+					"This component displays the main section including bannerPromo, continueWatching and popular. Use the Skeleton variant to see the loading state.",
+			},
+		},
+	},
 };
 
 export default meta;
 
+// Story con datos cargados (vista normal)
 export const Default: StoryObj<typeof Main> = {
 	args: {
 		bannerPromo: {
+			id: "1",
 			title: "playNow",
 			genre: "super heroes",
 			imageSrc: "/static/image_placeholder.jpg",
 			currentViewers: [
-				{
-					id: "1",
-					imageSrc: "/static/viewer1.png",
-				},
-				{
-					id: "2",
-					imageSrc: "/static/viewer2.png",
-				},
+				{ id: "1", imageSrc: "/static/viewer1.png" },
+				{ id: "2", imageSrc: "/static/viewer2.png" },
 			],
 		},
 		continueWatching: [
 			{
+				id: "2",
 				title: "Trending",
 				secondaryTitle: "Chile",
 				link: "/",
@@ -36,11 +41,12 @@ export const Default: StoryObj<typeof Main> = {
 				imageSrc: "/static/image_placeholder.jpg",
 				genre: "super heroes",
 				description:
-					"For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk...",
+					"For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed...",
 				trend: true,
 				views: "540K",
 			},
 			{
+				id: "3",
 				title: "Título con viewers",
 				secondaryTitle: "México",
 				link: "/",
@@ -50,21 +56,16 @@ export const Default: StoryObj<typeof Main> = {
 				imageSrc: "/static/image_placeholder.jpg",
 				genre: "super heroes",
 				description:
-					"For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk...",
+					"For the first time in the cinematic history of Spider-Man...",
 				currentViewers: [
-					{
-						id: "1",
-						imageSrc: "/static/viewer1.png",
-					},
-					{
-						id: "2",
-						imageSrc: "/static/viewer2.png",
-					},
+					{ id: "1", imageSrc: "/static/viewer1.png" },
+					{ id: "2", imageSrc: "/static/viewer2.png" },
 				],
 			},
 		],
 		popular: [
 			{
+				id: "4",
 				title: "estrellas",
 				secondaryTitle: "Drama / Western",
 				link: "/",
@@ -74,6 +75,7 @@ export const Default: StoryObj<typeof Main> = {
 				genre: "super heroes",
 			},
 			{
+				id: "5",
 				title: "estrellas",
 				secondaryTitle: "Sci-fi / Space Opera",
 				link: "/",
@@ -83,6 +85,7 @@ export const Default: StoryObj<typeof Main> = {
 				genre: "super heroes",
 			},
 			{
+				id: "6",
 				title: "estrellas",
 				secondaryTitle: "Action / Adventure",
 				link: "/",
@@ -92,5 +95,13 @@ export const Default: StoryObj<typeof Main> = {
 				genre: "super heroes",
 			},
 		],
+	},
+};
+
+// Story para mostrar el Skeleton Loader (sin datos)
+export const Skeleton: StoryObj<typeof Main> = {
+	args: {
+		continueWatching: [],
+		popular: [],
 	},
 };

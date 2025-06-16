@@ -2,11 +2,7 @@ import React from "react";
 import "../../../tailwind.css";
 import { SecondaryTextProps } from "../../../types/atoms";
 
-const SecondaryText: React.FC<SecondaryTextProps> = ({
-	label,
-	size,
-	weigth,
-}) => {
+const SecondaryText = ({ label, size, weigth }: SecondaryTextProps) => {
 	return (
 		<div>
 			<span

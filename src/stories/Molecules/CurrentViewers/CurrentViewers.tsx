@@ -5,7 +5,7 @@ import ImageBubble from "../../Atoms/ImageBubble";
 import PrimaryText from "../../Atoms/PrimaryText";
 import { CurrentViewersProps } from "../../../types/molecules";
 
-const CurrentViewers: React.FC<CurrentViewersProps> = ({ currentViewers }) => {
+const CurrentViewers = ({ currentViewers }: CurrentViewersProps) => {
 	return (
 		<div className="w-full flex items-center h-full">
 			<div key={currentViewers[0].id}>

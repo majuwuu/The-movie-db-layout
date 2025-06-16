@@ -8,7 +8,8 @@ import WatchNowButton from "../WatchNowButton";
 import { useState } from "react";
 import { VideoCardDescriptionProps } from "../../../types/molecules";
 
-const TrailerPreview: React.FC<VideoCardDescriptionProps> = ({
+const TrailerPreview = ({
+	id,
 	title,
 	secondaryTitle,
 	link,
@@ -21,7 +22,7 @@ const TrailerPreview: React.FC<VideoCardDescriptionProps> = ({
 	trend,
 	description,
 	genre,
-}) => {
+}: VideoCardDescriptionProps) => {
 	const [isHovering, setIsHovering] = useState(false);
 
 	return (

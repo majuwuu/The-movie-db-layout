@@ -5,7 +5,7 @@ import ImageBubble from "../../Atoms/ImageBubble";
 
 import { ProfileComponentProps } from "../../../types/molecules";
 
-const ProfileComponent: React.FC<ProfileComponentProps> = ({ imageSrc }) => {
+const ProfileComponent = ({ imageSrc }: ProfileComponentProps) => {
 	return (
 		<div
 			className="bg-[#17171B] w-9 h-5 flex cursor-pointer justify-between

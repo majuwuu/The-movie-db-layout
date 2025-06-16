@@ -15,6 +15,7 @@ export type ViewerProps = {
 };
 
 export type BannerPromoProps = {
+	id: string;
 	title: string;
 	imageSrc: string;
 	currentViewers?: ViewerProps[];
@@ -23,6 +24,8 @@ export type BannerPromoProps = {
 };
 
 export type ContinueWatchingItem = {
+	id: string;
+
 	title: string;
 	secondaryTitle: string;
 	link: string;
@@ -37,6 +40,7 @@ export type ContinueWatchingItem = {
 };
 
 export type PopularItemProps = {
+	id: string;
 	title: string;
 	secondaryTitle: string;
 	link: string;
@@ -53,19 +57,21 @@ export type MainContentProps = {
 	continueWatching: ContinueWatchingItem[];
 	popular: PopularItemProps[];
 };
+export type TrailerVideoProps = {
+	id: string;
+	title: string;
+	secondaryTitle: string;
+	link: string;
+	thirdTitle: string;
+	duration: string;
+	views: string;
+	imageSrc: string;
+	description?: string;
+	genre?: string;
+};
 
 export interface SidebarProps {
-	videos: {
-		title: string;
-		secondaryTitle: string;
-		link: string;
-		thirdTitle: string;
-		duration: string;
-		views: string;
-		imageSrc: string;
-		description?: string;
-		genre?: string;
-	}[];
+	videos: TrailerVideoProps[];
 
 	category: {
 		allCategories: string[];

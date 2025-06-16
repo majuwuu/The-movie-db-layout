@@ -1,6 +1,6 @@
 import React from "react";
 
-const SettingsItem: React.FC = () => {
+const SettingsItem = () => {
 	return (
 		<svg
 			width="17"

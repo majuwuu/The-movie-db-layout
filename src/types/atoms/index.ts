@@ -2,6 +2,7 @@ export interface ButtonProps {
 	label: string;
 	size: string;
 	weight: string;
+	onClick?: () => void;
 }
 
 export interface ImageBubbleProps {

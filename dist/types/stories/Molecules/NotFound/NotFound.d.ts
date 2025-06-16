@@ -1,3 +1,6 @@
 import "../../../tailwind.css";
-declare const NotFound: () => import("react/jsx-runtime").JSX.Element;
+interface NotFoundProps {
+    onClickEvent: () => void;
+}
+declare const NotFound: ({ onClickEvent }: NotFoundProps) => import("react/jsx-runtime").JSX.Element;
 export default NotFound;

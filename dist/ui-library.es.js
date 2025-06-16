@@ -576,7 +576,7 @@ const he = () => /* @__PURE__ */ e.jsx(
       label: `${r.length}+ friends are watching`
     }
   ) })
-] }), J = ({ label: r, size: t, weight: i, onClick: s }) => /* @__PURE__ */ e.jsx("button", { className: "appearance-none", children: /* @__PURE__ */ e.jsx(o, { size: "10px", label: r, weigth: "normal" }) }), Se = () => /* @__PURE__ */ e.jsxs("div", { className: "flex flex-row items-center justify-center w-25 h-8 rounded-[5px] bg-[#F36F45] cursor-pointer", children: [
+] }), J = ({ label: r, size: t, weight: i, onClick: s }) => /* @__PURE__ */ e.jsx("button", { onClick: s, className: "appearance-none", children: /* @__PURE__ */ e.jsx(o, { size: "10px", label: r, weigth: "normal" }) }), Se = () => /* @__PURE__ */ e.jsxs("div", { className: "flex flex-row items-center justify-center w-25 h-8 rounded-[5px] bg-[#F36F45] cursor-pointer", children: [
   /* @__PURE__ */ e.jsx("div", { className: " opacity-75 w-5 mx-2 -ml-2 ", children: /* @__PURE__ */ e.jsx(L, {}) }),
   /* @__PURE__ */ e.jsx("div", { className: "h-full flex items-center", children: /* @__PURE__ */ e.jsx("div", { className: "-mt-1", children: /* @__PURE__ */ e.jsx(J, { label: "Watch Now", size: "10px", weight: "normal" }) }) })
 ] }), F = ({
@@ -1099,7 +1099,7 @@ const he = () => /* @__PURE__ */ e.jsx(
       }
     )
   ] }),
-  /* @__PURE__ */ e.jsx("div", { className: "mt-3", children: /* @__PURE__ */ e.jsx(
+  /* @__PURE__ */ e.jsx("div", { className: "mt-3 p-3 bg-[#F36F45]  ", children: /* @__PURE__ */ e.jsx(
     J,
     {
       size: "18px",

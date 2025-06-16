@@ -5,7 +5,7 @@ import { ButtonProps } from "../../../types/atoms";
 
 const Button = ({ label, size, weight, onClick }: ButtonProps) => {
 	return (
-		<button className="appearance-none">
+		<button onClick={onClick} className="appearance-none">
 			<PrimaryText size={"10px"} label={label} weigth="normal" />
 		</button>
 	);

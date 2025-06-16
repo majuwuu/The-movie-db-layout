@@ -22,7 +22,7 @@ const NotFound = ({ onClickEvent }: NotFoundProps) => {
 					label="The page you are looking for doesn't exists."
 				/>
 			</div>
-			<div className="mt-3">
+			<div className="mt-3 p-3 bg-[#F36F45]  ">
 				<Button
 					size={"18px"}
 					label={"Go Back"}

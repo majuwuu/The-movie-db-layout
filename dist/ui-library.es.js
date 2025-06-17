@@ -146,7 +146,7 @@ function de() {
     }
     function b() {
       var l = r(this.type);
-      return V[l] || (V[l] = !0, console.error(
+      return W[l] || (W[l] = !0, console.error(
         "Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."
       )), l = this.props.ref, l !== void 0 ? l : null;
     }
@@ -215,8 +215,8 @@ React keys must be passed directly to JSX without using spread:
       }
       if (h = null, x !== void 0 && (n(x), h = "" + x), d(i) && (n(i.key), h = "" + i.key), "key" in i) {
         x = {};
-        for (var D in i)
-          D !== "key" && (x[D] = i[D]);
+        for (var L in i)
+          L !== "key" && (x[L] = i[L]);
       } else x = i;
       return h && m(
         x,
@@ -243,7 +243,7 @@ React keys must be passed directly to JSX without using spread:
         return l();
       }
     };
-    var $, V = {}, W = w["react-stack-bottom-frame"].bind(
+    var $, W = {}, V = w["react-stack-bottom-frame"].bind(
       w,
       c
     )(), H = A(s(c)), U = {};
@@ -256,7 +256,7 @@ React keys must be passed directly to JSX without using spread:
         !1,
         u,
         p,
-        f ? Error("react-stack-top-frame") : W,
+        f ? Error("react-stack-top-frame") : V,
         f ? A(s(l)) : H
       );
     }, T.jsxs = function(l, i, x, u, p) {
@@ -268,7 +268,7 @@ React keys must be passed directly to JSX without using spread:
         !0,
         u,
         p,
-        f ? Error("react-stack-top-frame") : W,
+        f ? Error("react-stack-top-frame") : V,
         f ? A(s(l)) : H
       );
     };
@@ -292,8 +292,8 @@ const he = () => /* @__PURE__ */ e.jsx(
       {
         d: "M19 19L14.7501 14.7425L19 19ZM17.1053 9.05263C17.1053 11.1883 16.2569 13.2365 14.7467 14.7467C13.2365 16.2569 11.1883 17.1053 9.05263 17.1053C6.91694 17.1053 4.86872 16.2569 3.35856 14.7467C1.8484 13.2365 1 11.1883 1 9.05263C1 6.91694 1.8484 4.86872 3.35856 3.35856C4.86872 1.8484 6.91694 1 9.05263 1C11.1883 1 13.2365 1.8484 14.7467 3.35856C16.2569 4.86872 17.1053 6.91694 17.1053 9.05263V9.05263Z",
         stroke: "white",
-        "stroke-width": "2",
-        "stroke-linecap": "round"
+        strokeWidth: "2",
+        strokeLinecap: "round"
       }
     )
   }
@@ -306,7 +306,7 @@ const he = () => /* @__PURE__ */ e.jsx(
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     children: [
-      /* @__PURE__ */ e.jsx("circle", { cx: "9.5", cy: "10", r: "8.5", stroke: "white", "stroke-width": "2" }),
+      /* @__PURE__ */ e.jsx("circle", { cx: "9.5", cy: "10", r: "8.5", stroke: "white", strokeWidth: "2" }),
       /* @__PURE__ */ e.jsx("circle", { cx: "15.6471", cy: "3.85294", r: "3.35294", fill: "#F36F45" })
     ]
   }
@@ -338,21 +338,21 @@ const he = () => /* @__PURE__ */ e.jsx(
       {
         d: "M1 1L5 5L9 1",
         stroke: "var(--color-secondary-gray)",
-        "stroke-linecap": "round"
+        strokeLinecap: "round"
       }
     )
   }
-), L = ({ children: r }) => /* @__PURE__ */ e.jsx("div", { children: r }), je = ({ imageSrc: r }) => /* @__PURE__ */ e.jsxs(
+), D = ({ children: r }) => /* @__PURE__ */ e.jsx("div", { children: r }), je = ({ imageSrc: r }) => /* @__PURE__ */ e.jsxs(
   "div",
   {
-    className: `bg-[--color-primary-gray] w-9 h-5 flex cursor-pointer justify-between\r
+    className: `bg-primary-gray w-9 h-5 flex cursor-pointer justify-between\r
 		 items-center`,
     children: [
-      /* @__PURE__ */ e.jsx(L, { children: /* @__PURE__ */ e.jsx("img", { src: r, alt: "Profile Picture" }) }),
+      /* @__PURE__ */ e.jsx(D, { children: /* @__PURE__ */ e.jsx("img", { src: r, alt: "Profile Picture" }) }),
       /* @__PURE__ */ e.jsx("div", { className: "", children: /* @__PURE__ */ e.jsx(pe, {}) })
     ]
   }
-), ge = ({ userData: r }) => /* @__PURE__ */ e.jsxs("nav", { className: "bg-[--color-primary-gray] w-min flex relative gap-5.5 pt-10.5 px-6 cursor-pointer", children: [
+), ge = ({ userData: r }) => /* @__PURE__ */ e.jsxs("nav", { className: "bg-primary-gray] w-min flex relative gap-5.5 pt-10.5 px-6 cursor-pointer", children: [
   /* @__PURE__ */ e.jsx(he, {}),
   /* @__PURE__ */ e.jsx(me, {}),
   /* @__PURE__ */ e.jsx(fe, {}),
@@ -390,8 +390,8 @@ const he = () => /* @__PURE__ */ e.jsx(
   return /* @__PURE__ */ e.jsx(
     "nav",
     {
-      className: `bg-[--color-primary-gray] w-min flex relative gap-2\r
-		 lg:gap-15 pt-9.5 px-6 cursor-pointer lg:ml-[226px]`,
+      className: `bg-primary-gray w-min flex relative gap-2\r
+		 lg:gap-15 pt-9 px-6 cursor-pointer lg:ml-[226px]`,
       children: r.map((s) => /* @__PURE__ */ e.jsxs(
         "div",
         {
@@ -414,7 +414,7 @@ const he = () => /* @__PURE__ */ e.jsx(
       ))
     }
   );
-}, Ie = ({ navItems: r, userData: t }) => /* @__PURE__ */ e.jsxs("header", { className: "  header-gradient-border bg-[--color-primary-gray] lg:pl-[40px] flex flex-col-reverse md:flex-row justify-between min-h-22 p-1 xl:p-4 ", children: [
+}, Ie = ({ navItems: r, userData: t }) => /* @__PURE__ */ e.jsxs("header", { className: "header-gradient-border bg-primary-gray lg:pl-[40px] flex flex-col-reverse md:flex-row justify-between min-h-22 p-1 xl:p-4 ", children: [
   /* @__PURE__ */ e.jsx("div", { className: "w-full md:w-auto mb-6 md:mb-0 flex justify-center md:justify-start", children: /* @__PURE__ */ e.jsx(ve, { navItems: r }) }),
   /* @__PURE__ */ e.jsx("div", { className: "w-full md:w-auto flex justify-center md:justify-end", children: /* @__PURE__ */ e.jsx(ge, { userData: t }) })
 ] }), be = ({
@@ -459,7 +459,7 @@ const he = () => /* @__PURE__ */ e.jsx(
       ]
     }
   );
-}, B = () => /* @__PURE__ */ e.jsx("div", { className: "w-auto h-auto flex justify-center items-center rounded-full bg-[--color-secondary-gray]", children: /* @__PURE__ */ e.jsx("div", { className: "w-full p-1 h-full", children: /* @__PURE__ */ e.jsx(
+}, B = () => /* @__PURE__ */ e.jsx("div", { className: "w-auto h-auto flex justify-center items-center rounded-full bg-secondary-gray", children: /* @__PURE__ */ e.jsx("div", { className: "w-full p-1 h-full", children: /* @__PURE__ */ e.jsx(
   "svg",
   {
     width: "100%",
@@ -554,8 +554,8 @@ const he = () => /* @__PURE__ */ e.jsx(
         {
           d: "M8.85705 5.06748C9.05455 5.32581 9.05455 5.67456 8.85705 5.93248C8.23496 6.74456 6.74246 8.41665 4.99996 8.41665C3.25746 8.41665 1.76496 6.74456 1.14288 5.93248C1.04679 5.80879 0.994629 5.65661 0.994629 5.49998C0.994629 5.34335 1.04679 5.19117 1.14288 5.06748C1.76496 4.2554 3.25746 2.58331 4.99996 2.58331C6.74246 2.58331 8.23496 4.2554 8.85705 5.06748V5.06748Z",
           stroke: "white",
-          "stroke-linecap": "round",
-          "stroke-linejoin": "round"
+          strokeLinecap: "round",
+          strokeLinejoin: "round"
         }
       ),
       /* @__PURE__ */ e.jsx(
@@ -563,8 +563,8 @@ const he = () => /* @__PURE__ */ e.jsx(
         {
           d: "M5 6.75C5.69036 6.75 6.25 6.19036 6.25 5.5C6.25 4.80964 5.69036 4.25 5 4.25C4.30964 4.25 3.75 4.80964 3.75 5.5C3.75 6.19036 4.30964 6.75 5 6.75Z",
           stroke: "white",
-          "stroke-linecap": "round",
-          "stroke-linejoin": "round"
+          strokeLinecap: "round",
+          strokeLinejoin: "round"
         }
       )
     ]
@@ -573,8 +573,8 @@ const he = () => /* @__PURE__ */ e.jsx(
   /* @__PURE__ */ e.jsx("div", { className: "w-2.5 mt-1 mx-2", children: /* @__PURE__ */ e.jsx(Ee, {}) }),
   /* @__PURE__ */ e.jsx("div", { children: /* @__PURE__ */ e.jsx(o, { size: "10px", weigth: "normal", label: r }) })
 ] }), Te = () => /* @__PURE__ */ e.jsx("div", { className: " w-full h-full  ", children: /* @__PURE__ */ e.jsx(F, { label: "#1 Trending 🔥", color: "#FFFFFF" }) }), Re = ({ currentViewers: r }) => /* @__PURE__ */ e.jsxs("div", { className: "w-full flex items-center h-full", children: [
-  /* @__PURE__ */ e.jsx("div", { children: /* @__PURE__ */ e.jsx(L, { children: /* @__PURE__ */ e.jsx("img", { src: r[0].imageSrc }) }) }, r[0].id),
-  /* @__PURE__ */ e.jsx("div", { className: "-ml-3 mr-3", children: /* @__PURE__ */ e.jsx(L, { children: /* @__PURE__ */ e.jsx("img", { src: r[1].imageSrc }) }) }, r[1].id),
+  /* @__PURE__ */ e.jsx("div", { children: /* @__PURE__ */ e.jsx(D, { children: /* @__PURE__ */ e.jsx("img", { src: r[0].imageSrc }) }) }, r[0].id),
+  /* @__PURE__ */ e.jsx("div", { className: "-ml-3 mr-3", children: /* @__PURE__ */ e.jsx(D, { children: /* @__PURE__ */ e.jsx("img", { src: r[1].imageSrc }) }) }, r[1].id),
   /* @__PURE__ */ e.jsx("div", { className: "-mt-1", children: /* @__PURE__ */ e.jsx(
     o,
     {
@@ -583,7 +583,7 @@ const he = () => /* @__PURE__ */ e.jsx(
       label: `${r.length}+ friends are watching`
     }
   ) })
-] }), J = ({ label: r, size: t, weight: n, onClick: s }) => /* @__PURE__ */ e.jsx("button", { onClick: s, className: "appearance-none", children: /* @__PURE__ */ e.jsx(o, { size: "10px", label: r, weigth: "normal" }) }), Se = () => /* @__PURE__ */ e.jsxs("div", { className: "flex flex-row items-center justify-center w-25 h-8 rounded-[5px] bg-[--color-primary-orange] cursor-pointer", children: [
+] }), J = ({ label: r, size: t, weight: n, onClick: s }) => /* @__PURE__ */ e.jsx("button", { onClick: s, className: "appearance-none", children: /* @__PURE__ */ e.jsx(o, { size: "10px", label: r, weigth: "normal" }) }), Se = () => /* @__PURE__ */ e.jsxs("div", { className: "flex flex-row items-center justify-center w-25 h-8 rounded-[5px] bg-primary-orange cursor-pointer", children: [
   /* @__PURE__ */ e.jsx("div", { className: " opacity-75 w-5 mx-2 -ml-2 ", children: /* @__PURE__ */ e.jsx(B, {}) }),
   /* @__PURE__ */ e.jsx("div", { className: "h-full flex items-center", children: /* @__PURE__ */ e.jsx("div", { className: "-mt-1", children: /* @__PURE__ */ e.jsx(J, { label: "Watch Now", size: "10px", weight: "normal" }) }) })
 ] }), _ = ({
@@ -646,7 +646,7 @@ const he = () => /* @__PURE__ */ e.jsx(
 ] }), Fe = () => /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
   /* @__PURE__ */ e.jsx("div", { className: "-full lg:w-[402px] lg:h-[170px]", children: /* @__PURE__ */ e.jsx(j, {}) }),
   /* @__PURE__ */ e.jsx("div", { className: "-full lg:w-[402px] lg:h-[170px]", children: /* @__PURE__ */ e.jsx(j, {}) })
-] }), Ye = ({ bannerPromo: r, continueWatching: t, popular: n }) => /* @__PURE__ */ e.jsxs("main", { className: "bg-[--color-primary-gray] px-4 sm:pl-9 sm:pr-7 lg:max-w-min pb-4.5 xs:p-10 lg:pt-8.5 2xl:pl-24 max-w-full", children: [
+] }), Ye = ({ bannerPromo: r, continueWatching: t, popular: n }) => /* @__PURE__ */ e.jsxs("main", { className: "bg-primary-gray px-4 sm:pl-9 sm:pr-7 lg:max-w-min pb-4.5 xs:p-10 lg:pt-8.5 2xl:pl-24 max-w-full", children: [
   /* @__PURE__ */ e.jsx("section", { className: "lg:block lg:h-[134px] lg:w-[834px] relative", children: r ? /* @__PURE__ */ e.jsx(
     _,
     {
@@ -858,15 +858,15 @@ const he = () => /* @__PURE__ */ e.jsx(
       ]
     }
   );
-}, De = () => /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+}, Le = () => /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
   /* @__PURE__ */ e.jsx("div", { className: "-full lg:w-[402px] lg:h-[170px]", children: /* @__PURE__ */ e.jsx(j, {}) }),
   /* @__PURE__ */ e.jsx("div", { className: "-full lg:w-[402px] lg:h-[170px]", children: /* @__PURE__ */ e.jsx(j, {}) })
-] }), $e = ({ videos: r, category: t, onCloseSideBar: n }) => /* @__PURE__ */ e.jsxs("aside", { className: "bg-[--color-primary-gray] relative w-full lg:w-[450px] pt-8.5  items-center xs:min-h-screen flex flex-col 2xl:h-screen m-0 p-0 border-r border-[--color-quaternary-gray]", children: [
+] }), $e = ({ videos: r, category: t, onCloseSideBar: n }) => /* @__PURE__ */ e.jsxs("aside", { className: "bg-primary-gray relative w-full lg:w-[450px] pt-8.5  items-center xs:min-h-screen flex flex-col 2xl:h-screen m-0 p-0 border-r border-quaternary-gray", children: [
   /* @__PURE__ */ e.jsxs("div", { className: "flex w-full justify-between items-center px-6  lg:px-12.5 sm:px-6 whitespace-nowrap", children: [
     /* @__PURE__ */ e.jsx(o, { size: "18px", label: "New trailers", weigth: "bold" }),
     /* @__PURE__ */ e.jsx("div", { className: "flex justify-between items-center w-auto", children: /* @__PURE__ */ e.jsx(Oe, { category: t }) })
   ] }),
-  /* @__PURE__ */ e.jsx("div", { className: "flex flex-col pt-5.5 pb-5 sm:px-6.5 gap-5.5 w-full items-center ", children: r.length === 0 ? /* @__PURE__ */ e.jsx(De, {}) : r.map((s) => /* @__PURE__ */ e.jsx(
+  /* @__PURE__ */ e.jsx("div", { className: "flex flex-col pt-5.5 pb-5 sm:px-6.5 gap-5.5 w-full items-center ", children: r.length === 0 ? /* @__PURE__ */ e.jsx(Le, {}) : r.map((s) => /* @__PURE__ */ e.jsx(
     "div",
     {
       className: "w-full max-h-[150px]  px-6 max-w-sm sm:max-w-md md:max-w-lg rounded-3xl overflow-hidden",
@@ -888,7 +888,7 @@ const he = () => /* @__PURE__ */ e.jsx(
     },
     s.id
   )) }),
-  /* @__PURE__ */ e.jsxs("div", { className: " bg-[--color-light-gray] 2xl:h-screen w-full", children: [
+  /* @__PURE__ */ e.jsxs("div", { className: " bg-light-gray 2xl:h-screen w-full", children: [
     /* @__PURE__ */ e.jsx(ze, { category: t }),
     /* @__PURE__ */ e.jsx(Ae, { category: t })
   ] }),
@@ -900,7 +900,7 @@ const he = () => /* @__PURE__ */ e.jsx(
       children: /* @__PURE__ */ e.jsx(B, {})
     }
   )
-] }), Ve = ({ label: r }) => /* @__PURE__ */ e.jsx("div", { className: "bg-[--color-primary-gray] max-w-min whitespace-nowrap p-3 rounded-[20px] text-white", children: r }), Le = () => /* @__PURE__ */ e.jsx("div", { className: "w-full h-full", children: /* @__PURE__ */ e.jsxs(
+] }), We = ({ label: r }) => /* @__PURE__ */ e.jsx("div", { className: "bg-primary-gray max-w-min whitespace-nowrap p-3 rounded-[20px] text-white", children: r }), De = () => /* @__PURE__ */ e.jsx("div", { className: "w-full h-full", children: /* @__PURE__ */ e.jsxs(
   "svg",
   {
     height: "100%",
@@ -1093,8 +1093,8 @@ const he = () => /* @__PURE__ */ e.jsx(
       ] })
     ]
   }
-) }), We = ({ onClickEvent: r }) => /* @__PURE__ */ e.jsxs("div", { className: "h-screen bg-[--color-primary-gray] flex justify-center flex-col items-center w-full", children: [
-  /* @__PURE__ */ e.jsx("div", { className: "w-54 h-54", children: /* @__PURE__ */ e.jsx(Le, {}) }),
+) }), Ve = ({ onClickEvent: r }) => /* @__PURE__ */ e.jsxs("div", { className: "h-screen bg-primary-gray] flex justify-center flex-col items-center w-full", children: [
+  /* @__PURE__ */ e.jsx("div", { className: "w-54 h-54", children: /* @__PURE__ */ e.jsx(De, {}) }),
   /* @__PURE__ */ e.jsxs("div", { className: "text-center mt-4", children: [
     /* @__PURE__ */ e.jsx(o, { size: "18px", weigth: "bold", label: "OOPS!" }),
     /* @__PURE__ */ e.jsx(
@@ -1106,7 +1106,7 @@ const he = () => /* @__PURE__ */ e.jsx(
       }
     )
   ] }),
-  /* @__PURE__ */ e.jsx("div", { className: "mt-3 p-3 bg-[--color-primary-orange]  ", children: /* @__PURE__ */ e.jsx(
+  /* @__PURE__ */ e.jsx("div", { className: "mt-3 p-3 bg-primary-orange ", children: /* @__PURE__ */ e.jsx(
     J,
     {
       size: "18px",
@@ -1173,9 +1173,9 @@ export {
   J as Button,
   Ie as Header,
   Ye as Main,
-  We as NotFound,
+  Ve as NotFound,
   B as PlayItem,
   $e as SideBar,
   He as SvgTMDB,
-  Ve as Toast
+  We as Toast
 };

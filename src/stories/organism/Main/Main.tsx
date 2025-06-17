@@ -10,7 +10,7 @@ import SkeletonContinueWatching from "../../Molecules/SkeletonContinueWatching";
 
 const Main = ({ bannerPromo, continueWatching, popular }: MainContentProps) => {
 	return (
-		<main className="bg-[#17171B] px-4 sm:pl-9 sm:pr-7 lg:max-w-min pb-4.5 xs:p-10 lg:pt-8.5 2xl:pl-24 max-w-full">
+		<main className="bg-primary-gray px-4 sm:pl-9 sm:pr-7 lg:max-w-min pb-4.5 xs:p-10 lg:pt-8.5 2xl:pl-24 max-w-full">
 			<section className="lg:block lg:h-[134px] lg:w-[834px] relative">
 				{!bannerPromo ? (
 					<div className="w-full h-full">
@@ -40,13 +40,13 @@ const Main = ({ bannerPromo, continueWatching, popular }: MainContentProps) => {
 							label="|"
 							size="12px"
 							weigth="normal"
-							color="#606265"
+							color="--color-tertiary-gray"
 						/>
 						<PrimaryText
 							label={`${continueWatching.length} Movies`}
 							size="12px"
 							weigth="normal"
-							color="#606265"
+							color="--color-tertiary-gray"
 						/>
 					</div>
 					<div className="cursor-pointer">
@@ -54,7 +54,7 @@ const Main = ({ bannerPromo, continueWatching, popular }: MainContentProps) => {
 							label={`All Movies >`}
 							size="12px"
 							weigth="normal"
-							color="#606265"
+							color="--color-tertiary-gray"
 						/>
 					</div>
 				</div>
@@ -98,7 +98,7 @@ const Main = ({ bannerPromo, continueWatching, popular }: MainContentProps) => {
 							label={`All Movies >`}
 							size="12px"
 							weigth="normal"
-							color="#606265"
+							color="--color-tertiary-gray"
 						/>
 					</div>
 				</div>

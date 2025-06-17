@@ -23,7 +23,7 @@ const SortBy = ({ category }: SortByProps) => {
 					label={selected}
 					weigth={"normal"}
 					size={"12px"}
-					color="#606265"
+					color="--color-tertiary-gray"
 				/>
 				{open && (
 					<div className="absolute left-0 mt-1 bg-white border rounded shadow z-10 min-w-full">

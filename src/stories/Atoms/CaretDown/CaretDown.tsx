@@ -8,7 +8,11 @@ const CaretDown = () => {
 			viewBox="0 0 10 6"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg">
-			<path d="M1 1L5 5L9 1" stroke="#C4C4C4" stroke-linecap="round" />
+			<path
+				d="M1 1L5 5L9 1"
+				stroke="var(--color-secondary-gray)"
+				strokeLinecap="round"
+			/>
 		</svg>
 	);
 };

@@ -15,8 +15,8 @@ const HeaderNavBar = ({ navItems }: HeaderNavBarProps) => {
 
 	return (
 		<nav
-			className="bg-[#17171B] w-min flex relative gap-2
-		 lg:gap-15 pt-9.5 px-6 cursor-pointer lg:ml-[226px]">
+			className="bg-primary-gray w-min flex relative gap-2
+		 lg:gap-15 pt-9 px-6 cursor-pointer lg:ml-[226px]">
 			{navItems.map((item) => (
 				<div
 					key={item.title}
@@ -27,7 +27,9 @@ const HeaderNavBar = ({ navItems }: HeaderNavBarProps) => {
 							label={item.title}
 							size="12px"
 							weigth={item.title === activeItem ? "bold" : "normal"}
-							color={item.title !== activeItem ? "#606265" : undefined}
+							color={
+								item.title !== activeItem ? "--color-tertiary-gray" : undefined
+							}
 						/>
 					</a>
 					{item.title === activeItem && (

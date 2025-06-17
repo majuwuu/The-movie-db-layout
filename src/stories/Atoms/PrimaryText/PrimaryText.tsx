@@ -10,9 +10,9 @@ const PrimaryText = ({ label, size, weigth, color }: PrimaryTextProps) => {
 					fontSize: size,
 					fontFamily: "quicksand, sans-serif",
 					fontWeight: weigth,
-					color: color ? color : "#fff",
+					color: color ? `var(${color})` : "#fff",
 				}}
-				className={`m-0 p-0 select-none text-white `}>
+				className={`m-0 p-0 select-none text-white`}>
 				{label}
 			</span>
 		</div>

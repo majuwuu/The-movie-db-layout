@@ -12,7 +12,7 @@ import SkeletonAside from "../../Molecules/SkeletonAside";
 
 const Sidebar = ({ videos, category, onCloseSideBar }: SidebarProps) => {
 	return (
-		<aside className="bg-[#17171B] relative w-full lg:w-[450px] pt-8.5  items-center xs:min-h-screen flex flex-col 2xl:h-screen m-0 p-0 border-r border-[#323232]">
+		<aside className="bg-primary-gray relative w-full lg:w-[450px] pt-8.5  items-center xs:min-h-screen flex flex-col 2xl:h-screen m-0 p-0 border-r border-[--color-quaternary-gray]">
 			<div className="flex w-full justify-between items-center px-6  lg:px-12.5 sm:px-6 whitespace-nowrap">
 				<PrimaryText size={"18px"} label="New trailers" weigth="bold" />
 				<div className="flex justify-between items-center w-auto">
@@ -45,7 +45,7 @@ const Sidebar = ({ videos, category, onCloseSideBar }: SidebarProps) => {
 				)}
 			</div>
 
-			<div className=" bg-[#1E1E21] 2xl:h-screen w-full">
+			<div className=" bg-light-gray 2xl:h-screen w-full">
 				<FavouriteGenres category={category} />
 				<AddGenres category={category} />
 			</div>

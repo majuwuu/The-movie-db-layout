@@ -10,7 +10,7 @@ interface NotFoundProps {
 
 const NotFound = ({ onClickEvent }: NotFoundProps) => {
 	return (
-		<div className="h-screen bg-[#17171B] flex justify-center flex-col items-center w-full">
+		<div className="h-screen bg-primary-gray] flex justify-center flex-col items-center w-full">
 			<div className="w-54 h-54">
 				<PopCorn />
 			</div>
@@ -22,7 +22,7 @@ const NotFound = ({ onClickEvent }: NotFoundProps) => {
 					label="The page you are looking for doesn't exists."
 				/>
 			</div>
-			<div className="mt-3 p-3 bg-[#F36F45]  ">
+			<div className="mt-3 p-3 bg-primary-orange ">
 				<Button
 					size={"18px"}
 					label={"Go Back"}

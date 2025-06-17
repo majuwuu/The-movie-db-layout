@@ -10,7 +10,7 @@ const SecondaryText = ({ label, size, weigth }: SecondaryTextProps) => {
 					fontSize: size,
 					fontFamily: "quicksand, sans-serif",
 				}}
-				className={` text-[#606265] font-normal`}>
+				className={` text-[--color-tertiary-gray] font-normal`}>
 				{label}
 			</span>
 		</div>

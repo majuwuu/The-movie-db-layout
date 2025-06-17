@@ -3,7 +3,7 @@
 	border-image: linear-gradient(
 		to right,
 		rgba(255, 255, 255, 0) 0%,
-		var(--border-quaternary-gray) 51%,
+		var(--color-quaternary-gray) 51%,
 		rgba(255, 255, 255, 0) 100%
 	);
 	border-image-slice: 1;
